@@ -1,9 +1,9 @@
 {
-  "name": "@flowscale/web",
+  "name": "flowscale-ai-os-web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 5174",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -18,7 +18,6 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@flowscale/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
