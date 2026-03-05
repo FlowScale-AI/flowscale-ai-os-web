@@ -1,9 +1,13 @@
 import Navbar from "@/components/MinimalNavbar";
-import Hero from "@/components/Hero";
-import ProblemSolution from "@/components/ProblemSolution";
-import WorkflowSteps from "@/components/WorkflowSteps";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
+import PlatformHero from "@/components/platform/PlatformHero";
+import PlatformProblem from "@/components/platform/PlatformProblem";
+import PlatformSolution from "@/components/platform/PlatformSolution";
+import PlatformDifferentiation from "@/components/platform/PlatformDifferentiation";
+import PlatformHowItWorks from "@/components/platform/PlatformHowItWorks";
+import PlatformOpenSource from "@/components/platform/PlatformOpenSource";
+import PlatformPricing from "@/components/platform/PlatformPricing";
+import PlatformCTA from "@/components/platform/PlatformCTA";
+import PlatformFooter from "@/components/platform/PlatformFooter";
 
 export default function AIOSPage() {
     return (
@@ -18,11 +22,15 @@ export default function AIOSPage() {
                 <Navbar />
 
                 <div className="relative z-10 flex flex-col">
-                    <Hero />
-                    <ProblemSolution />
-                    <WorkflowSteps />
-                    <CTA />
-                    <Footer />
+                    <PlatformHero />
+                    <PlatformProblem />
+                    <PlatformSolution />
+                    <PlatformDifferentiation />
+                    <PlatformHowItWorks />
+                    <PlatformOpenSource />
+                    <PlatformPricing />
+                    <PlatformCTA />
+                    <PlatformFooter />
                 </div>
             </main>
         </div>
