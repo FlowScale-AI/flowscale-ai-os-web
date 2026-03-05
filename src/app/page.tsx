@@ -1,9 +1,9 @@
-import Navbar from "@/components/landing/Navbar";
-import Hero from "@/components/landing/Hero";
-import ProblemSolution from "@/components/landing/ProblemSolution";
-import WorkflowSteps from "@/components/landing/WorkflowSteps";
-import CTA from "@/components/landing/CTA";
-import Footer from "@/components/landing/Footer";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ProblemSolution from "@/components/ProblemSolution";
+import WorkflowSteps from "@/components/WorkflowSteps";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
