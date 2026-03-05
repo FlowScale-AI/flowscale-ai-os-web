@@ -76,10 +76,10 @@ export default function Home() {
 
                             {/* <div className="flex flex-col sm:flex-row gap-3">
                                 <a
-                                    href="/ai-os"
+                                    href="/platform"
                                     className="group flex items-center justify-center gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-5 py-2.5 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]"
                                 >
-                                    <span>Enter AIOS</span>
+                                    <span>Enter Platform</span>
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-0.5 transition-transform">
                                         <line x1="5" y1="12" x2="19" y2="12" />
                                         <polyline points="12 5 19 12 12 19" />
