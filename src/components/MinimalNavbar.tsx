@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MinimalNavbar() {
     return (
-        <nav className="z-50 flex px-6 md:px-10 py-4 relative items-center justify-between border-b border-white/5 bg-[#0a0a0a]/10 backdrop-blur-md">
+        <nav className="z-50 flex px-6 md:px-12 lg:px-16 py-4 relative items-center justify-between border-b border-white/5 bg-[#0a0a0a]/10 backdrop-blur-md">
             {/* Logo */}
             <div className="flex gap-3 items-center">
                 <img src="/flowscale-white-logo-full.png" alt="FlowScale" className="h-6 w-auto" />

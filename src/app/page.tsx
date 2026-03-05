@@ -3,8 +3,8 @@ import FloatingParticles from "@/components/FloatingParticles";
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col lg:items-center lg:justify-center lg:p-6">
-            <main className="min-h-screen overflow-hidden flex flex-col lg:max-w-[1400px] lg:min-h-[850px] lg:rounded-[2rem] lg:border lg:border-white/5 lg:shadow-2xl lg:shadow-black bg-[#0a0a0a] w-full relative">
+        <div className="min-h-screen bg-black lg:p-6 xl:p-8 2xl:p-10 flex flex-col">
+            <main className="flex-1 overflow-hidden flex flex-col lg:rounded-[2rem] lg:border lg:border-white/5 lg:shadow-2xl lg:shadow-black bg-[#0a0a0a] w-full relative">
 
                 {/* Grid Background */}
                 <div className="absolute inset-0 w-full h-full pointer-events-none z-0 bg-grid-pattern opacity-50" />
@@ -33,7 +33,7 @@ export default function Home() {
                 <Navbar />
 
                 {/* Hero — Anthropic-style split layout */}
-                <div className="flex-1 w-full z-20 flex flex-col justify-end relative px-6 md:px-12 pb-12 md:pb-16">
+                <div className="flex-1 w-full z-20 flex flex-col justify-end relative px-6 md:px-12 lg:px-16 pb-10">
 
                     {/* Status badge — top of hero area */}
                     {/* <div className="inline-flex items-center gap-2 mb-auto pt-12 md:pt-16">
