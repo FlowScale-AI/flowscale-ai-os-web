@@ -3,93 +3,41 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 export default function PlatformFooter() {
-    const links = {
-        product: [
-            { label: "How It Works", href: "#" },
-            { label: "Open Source", href: "#" },
-            { label: "Enterprise", href: "#" }
-        ],
-        resources: [
-            { label: "Documentation", href: "#" },
-            { label: "GitHub", href: "#" }
-        ],
-        company: [
-            { label: "FlowScale", href: "/about" },
-            { label: "Blog", href: "/blog" }
-        ],
-        legal: [
-            { label: "Privacy", href: "#" },
-            { label: "Terms", href: "#" }
-        ]
-    };
-
     return (
-        <footer className="relative z-20 bg-[#080809] border-t border-white/5 py-16 px-6 md:px-12">
-            <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
+        <footer className="relative z-20 bg-[#080809] border-t border-white/5 py-12 px-6 md:px-12 mt-auto">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
 
                 {/* Brand */}
-                <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
-                    <div className="flex items-center gap-2">
-                        <img src="/logo-dark.png" alt="FlowScale" className="h-6 w-auto opacity-80" />
-                        <span className="text-white font-tech font-bold tracking-tight">FlowScale</span>
-                    </div>
-                    <p className="text-zinc-500 text-sm">
-                        AI Operating System for the Creative Pipeline
+                <div className="flex flex-col gap-2">
+                    <span className="text-white font-tech tracking-tight text-lg">FlowScale AI OS</span>
+                    <p className="text-zinc-500 text-sm max-w-xs">
+                        The Operating System for Creative AI Production.
                     </p>
                 </div>
 
-                {/* Links */}
-                <div className="flex flex-col gap-4">
-                    <h4 className="text-white font-medium text-sm font-tech">Product</h4>
-                    <ul className="space-y-3">
-                        {links.product.map((link, idx) => (
-                            <li key={idx}>
-                                <Link href={link.href} className="text-zinc-400 hover:text-white text-sm transition-colors">
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                {/* Primary Links */}
+                <div className="flex flex-wrap gap-6 items-center">
+                    <Link href="/platform" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                        Platform
+                    </Link>
+                    <Link href="/about" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                        About
+                    </Link>
+                    <Link href="/blog" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                        Blog
+                    </Link>
 
-                <div className="flex flex-col gap-4">
-                    <h4 className="text-white font-medium text-sm font-tech">Resources</h4>
-                    <ul className="space-y-3">
-                        {links.resources.map((link, idx) => (
-                            <li key={idx}>
-                                <Link href={link.href} className="text-zinc-400 hover:text-white text-sm transition-colors flex items-center gap-1.5">
-                                    {link.label}
-                                    {link.label === "GitHub" && <Icon icon="simple-icons:github" className="w-3 h-3" />}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                    <div className="w-[1px] h-4 bg-white/10 hidden sm:block"></div>
 
-                <div className="flex flex-col gap-4">
-                    <h4 className="text-white font-medium text-sm font-tech">Company</h4>
-                    <ul className="space-y-3">
-                        {links.company.map((link, idx) => (
-                            <li key={idx}>
-                                <Link href={link.href} className="text-zinc-400 hover:text-white text-sm transition-colors">
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div className="flex flex-col gap-4">
-                    <h4 className="text-white font-medium text-sm font-tech">Legal</h4>
-                    <ul className="space-y-3">
-                        {links.legal.map((link, idx) => (
-                            <li key={idx}>
-                                <Link href={link.href} className="text-zinc-400 hover:text-white text-sm transition-colors">
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                    <a
+                        href="https://github.com/FlowScale"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-zinc-500 hover:text-white transition-colors flex items-center gap-2 text-sm"
+                    >
+                        <Icon icon="simple-icons:github" />
+                        <span>GitHub</span>
+                    </a>
                 </div>
 
             </div>
