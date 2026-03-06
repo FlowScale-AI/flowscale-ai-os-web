@@ -4,29 +4,29 @@ import { Icon } from "@iconify/react";
 export default function PlatformSolution() {
     const features = [
         {
-            title: "Workflow → App Conversion",
-            description: "Turn complex AI workflows into simple apps artists can use without touching nodes or code.",
+            title: "Workflow → Application Conversion",
+            description: "Transform complex AI workflows into simple applications artists can use without interacting with nodes or code.",
             icon: "solar:magic-stick-3-bold-duotone",
         },
         {
             title: "Local AI Infrastructure",
-            description: "Run generative AI models locally and maintain full control over your studio's data and assets.",
+            description: "Run generative models locally and maintain full control over creative assets, models, and data.",
             icon: "solar:server-square-bold-duotone",
         },
         {
-            title: "Open Source Foundation",
-            description: "Everything is built on open-source models and infrastructure, enabling full transparency and extensibility.",
-            icon: "solar:code-square-bold-duotone",
+            title: "Pipeline Integration",
+            description: "Deploy AI applications directly inside studio pipelines and internal production systems.",
+            icon: "solar:routing-bold-duotone",
         },
         {
             title: "Hybrid Model Access",
-            description: "Use local models by default, but integrate cloud models when needed through the FlowScale SDK.",
+            description: "Use local models by default while integrating cloud models when required.",
             icon: "solar:cloud-check-bold-duotone",
         }
     ];
 
     return (
-        <section className="relative z-20 bg-[#0a0a0a] py-32 px-6 md:px-12 border-t border-white/5 overflow-hidden">
+        <section className="relative z-20 bg-[#080809] py-32 px-6 md:px-12 border-t border-white/5 overflow-hidden">
             {/* Glow Effect */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[500px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -34,18 +34,24 @@ export default function PlatformSolution() {
 
                 {/* Text Content */}
                 <div className="lg:w-1/2">
+                    <p className="font-mono-custom text-[11px] text-emerald-500 uppercase tracking-widest mb-6">
+                        The Solution
+                    </p>
                     <h2 className="text-4xl md:text-5xl text-white font-tech font-light tracking-tight mb-8 leading-[1.1]">
-                        One AI Operating System for the Entire <br />
+                        Turn AI Workflows Into <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-600">
-                            Creative Pipeline
+                            Production Infrastructure
                         </span>
                     </h2>
-                    <div className="space-y-6 text-zinc-400 text-lg font-light leading-relaxed">
+                    <div className="space-y-5 text-zinc-400 text-lg font-light leading-relaxed">
                         <p>
-                            FlowScale AIOS brings together technical directors and artists on a shared AI infrastructure.
+                            Technical teams build workflows using open tools such as ComfyUI or custom pipelines.
                         </p>
                         <p>
-                            It converts complex workflows into simple production-ready applications that run locally inside your studio.
+                            FlowScale converts those workflows into production‑ready applications.
+                        </p>
+                        <p>
+                            These applications run locally across studio infrastructure, allowing artists to use powerful AI tools without interacting with node graphs or code.
                         </p>
                     </div>
                 </div>

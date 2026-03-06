@@ -62,7 +62,6 @@ export default function LoginPage() {
             <nav className="relative z-10 p-6 md:px-12 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
                     <img src="/flowscale-white-logo-full.png" alt="FlowScale" className="h-6 w-auto" />
-                    <span className="text-white font-tech font-bold tracking-tight">FlowScale</span>
                 </Link>
             </nav>
 

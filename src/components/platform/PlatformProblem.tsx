@@ -5,33 +5,39 @@ export default function PlatformProblem() {
     const problems = [
         {
             icon: "solar:layers-minimalistic-bold-duotone",
-            title: "Fragmented AI Tooling",
-            description: "Creative teams rely on dozens of AI tools, each with its own subscription, workflow, and limitations."
+            title: "Fragmented Tooling",
+            description: "Studios rely on dozens of disconnected AI tools, each with different interfaces, subscriptions, and limitations."
         },
         {
             icon: "solar:shield-warning-bold-duotone",
             title: "Creative IP at Risk",
-            description: "Cloud AI tools process sensitive assets remotely, forcing studios to trust third-party infrastructure with intellectual property."
+            description: "Most AI tools operate on cloud infrastructure, forcing studios to send sensitive assets and client work outside their production environment."
         },
         {
             icon: "solar:programming-bold-duotone",
-            title: "Built for Engineers, Not Artists",
-            description: "Local AI solutions exist, but they are complex workflow tools designed for engineers rather than creative teams."
+            title: "Workflows Built for Engineers",
+            description: "Local AI workflows exist, but they are complex node graphs designed for technical users rather than artists."
         }
     ];
 
     return (
-        <section className="relative z-20 bg-[#080809] border-t border-white/5 py-24 px-6 md:px-12">
+        <section className="relative z-20 bg-[#0a0a0a] border-t border-white/5 py-24 px-6 md:px-12">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
 
                 {/* Section Header */}
                 <div className="text-center max-w-3xl mb-16">
+                    <p className="font-mono-custom text-[11px] text-red-400/70 uppercase tracking-widest mb-4">
+                        The Problem
+                    </p>
                     <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-6">
-                        Creative AI is powerful — but <br />
+                        AI Workflows Are Powerful — <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">
-                            impossible to run safely at scale.
+                            But Not Production Ready
                         </span>
                     </h2>
+                    <p className="text-zinc-500 text-lg font-light leading-relaxed">
+                        Creative teams experimenting with generative AI encounter three major barriers.
+                    </p>
                 </div>
 
                 {/* Problem grid */}

@@ -4,14 +4,14 @@ import Link from "next/link";
 
 export default function PlatformOpenSource() {
     const capabilities = [
-        "Inspect the entire codebase",
+        "Inspect the codebase",
         "Extend the platform",
-        "Customize models",
-        "Build internal tools"
+        "Customize workflows",
+        "Integrate internal tools"
     ];
 
     return (
-        <section className="relative z-20 bg-[#080809] border-t border-white/5 py-32 px-6 md:px-12">
+        <section className="relative z-20 bg-[#0a0a0a] border-t border-white/5 py-32 px-6 md:px-12">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
 
                 {/* Visual / Left */}
@@ -50,12 +50,14 @@ export default function PlatformOpenSource() {
                     </div>
 
                     <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-6">
-                        Fully Open Source Creative AI Infrastructure
+                        Open Infrastructure for Creative AI
                     </h2>
 
                     <p className="text-lg text-zinc-400 font-light leading-relaxed mb-8">
-                        FlowScale AIOS is released as an open-source platform, giving studios unprecedented control over their pipeline.
+                        FlowScale is built on open models and open systems, giving studios full control over how AI operates inside their production pipeline.
                     </p>
+
+                    <p className="text-sm text-zinc-500 font-light mb-6">Studios can:</p>
 
                     <div className="space-y-4 mb-10">
                         {capabilities.map((cap, idx) => (
@@ -67,13 +69,13 @@ export default function PlatformOpenSource() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link href="https://github.com" className="flex items-center justify-center gap-2 bg-white hover:bg-zinc-200 text-black text-sm font-semibold rounded-md px-6 py-3 transition-colors">
+                        <Link href="https://github.com/FlowScale" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-white hover:bg-zinc-200 text-black text-sm font-semibold rounded-md px-6 py-3 transition-colors">
                             <Icon icon="simple-icons:github" width="18" />
                             <span>View on GitHub</span>
                         </Link>
                         <button className="flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-6 py-3 transition-all">
                             <Icon icon="solar:star-bold" className="text-yellow-500" width="18" />
-                            <span>Give the repo a star</span>
+                            <span>Star on GitHub</span>
                         </button>
                     </div>
                 </div>

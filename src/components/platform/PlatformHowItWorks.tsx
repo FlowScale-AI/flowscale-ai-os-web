@@ -6,32 +6,32 @@ export default function PlatformHowItWorks() {
         {
             num: "1",
             title: "Build",
-            description: "Technical teams create AI workflows using open-source tools.",
+            description: "Technical teams create AI workflows using ComfyUI or custom pipelines.",
             icon: "solar:programming-bold-duotone"
         },
         {
             num: "2",
             title: "Convert",
-            description: "FlowScale transforms these workflows into simple production-ready applications.",
+            description: "FlowScale converts those workflows into simple production applications.",
             icon: "solar:refresh-square-bold-duotone"
         },
         {
             num: "3",
             title: "Deploy",
-            description: "Apps run locally across your studio's infrastructure for artists and teams.",
+            description: "Applications run across studio infrastructure and can be used by artists and teams.",
             icon: "solar:rocket-bold-duotone"
         }
     ];
 
     return (
-        <section className="relative z-20 bg-[#0a0a0a] py-32 px-6 md:px-12 border-t border-white/5">
+        <section className="relative z-20 bg-[#080809] py-32 px-6 md:px-12 border-t border-white/5">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-20">
                     <p className="font-mono-custom text-[11px] text-emerald-500 uppercase tracking-widest mb-4">
                         How It Works
                     </p>
                     <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight">
-                        From Workflow to Application
+                        From Workflow to Production Tool
                     </h2>
                 </div>
 
@@ -45,7 +45,7 @@ export default function PlatformHowItWorks() {
                             <div className="w-24 h-24 rounded-2xl bg-[#111113] border border-white/10 flex flex-col items-center justify-center mb-8 relative group shadow-xl">
                                 <div className="absolute inset-0 bg-emerald-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                 <div className="absolute -top-3 -right-3 w-8 h-8 rounded-lg bg-zinc-800 border border-white/20 flex items-center justify-center text-xs font-mono-custom text-emerald-400">
-                                    Step {step.num}
+                                    {step.num}
                                 </div>
                                 <Icon icon={step.icon} width="36" className="text-zinc-300 group-hover:text-white transition-colors" />
                             </div>

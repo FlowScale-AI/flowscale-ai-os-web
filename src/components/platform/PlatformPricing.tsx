@@ -3,12 +3,15 @@ import { Icon } from "@iconify/react";
 
 export default function PlatformPricing() {
     return (
-        <section className="relative z-20 bg-[#0a0a0a] py-32 px-6 md:px-12 border-t border-white/5">
+        <section className="relative z-20 bg-[#080809] py-32 px-6 md:px-12 border-t border-white/5">
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
+                    <p className="font-mono-custom text-[11px] text-emerald-500 uppercase tracking-widest mb-4">
+                        Pricing
+                    </p>
                     <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-4">
-                        Simple access to <br />
-                        <span className="text-zinc-500">production AI logic</span>
+                        Start Free. <br />
+                        <span className="text-zinc-500">Scale to Production.</span>
                     </h2>
                 </div>
 
@@ -21,7 +24,7 @@ export default function PlatformPricing() {
                             <h3 className="text-2xl text-white font-tech font-medium mb-2">Community</h3>
                             <div className="text-3xl text-white font-tech mb-4">Free</div>
                             <p className="text-zinc-500 text-sm leading-relaxed">
-                                Open-source version for individuals and small teams starting their AI journey.
+                                For individuals and small teams experimenting with AI workflows.
                             </p>
                         </div>
 
@@ -30,15 +33,15 @@ export default function PlatformPricing() {
                             <div className="space-y-4 mb-10">
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-zinc-400 w-5 h-5 shrink-0" />
-                                    <span className="text-zinc-300 text-sm">Local AI apps</span>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="solar:check-circle-bold-duotone" className="text-zinc-400 w-5 h-5 shrink-0" />
                                     <span className="text-zinc-300 text-sm">Workflow conversion</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-zinc-400 w-5 h-5 shrink-0" />
-                                    <span className="text-zinc-300 text-sm">Open-source tools</span>
+                                    <span className="text-zinc-300 text-sm">Local AI tools</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <Icon icon="solar:check-circle-bold-duotone" className="text-zinc-400 w-5 h-5 shrink-0" />
+                                    <span className="text-zinc-300 text-sm">Open source platform</span>
                                 </div>
                             </div>
                         </div>
@@ -62,9 +65,9 @@ export default function PlatformPricing() {
                         {/* Plan Header */}
                         <div className="mb-8 relative z-10">
                             <h3 className="text-2xl text-white font-tech font-medium mb-2">Enterprise</h3>
-                            <div className="text-xl text-emerald-400 font-tech font-medium mb-4 mt-2">Custom Pricing</div>
+                            <div className="text-xl text-emerald-400 font-tech font-medium mb-4 mt-2">Custom</div>
                             <p className="text-zinc-400 text-sm leading-relaxed">
-                                For studios deploying AI infrastructure safely at scale.
+                                For studios deploying AI infrastructure at scale.
                             </p>
                         </div>
 
@@ -73,15 +76,15 @@ export default function PlatformPricing() {
                             <div className="space-y-4 mb-10">
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-emerald-500 w-5 h-5 shrink-0" />
-                                    <span className="text-zinc-200 text-sm">Multi-node GPU clusters</span>
+                                    <span className="text-zinc-200 text-sm">Multi‑node GPU clusters</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-emerald-500 w-5 h-5 shrink-0" />
-                                    <span className="text-zinc-200 text-sm">Air-gapped deployments</span>
+                                    <span className="text-zinc-200 text-sm">Air‑gapped deployments</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-emerald-500 w-5 h-5 shrink-0" />
-                                    <span className="text-zinc-200 text-sm">Custom studio apps</span>
+                                    <span className="text-zinc-200 text-sm">Studio pipeline integration</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-emerald-500 w-5 h-5 shrink-0" />
@@ -92,7 +95,7 @@ export default function PlatformPricing() {
 
                         {/* CTA */}
                         <button className="relative z-10 w-full flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-emerald-950 text-sm font-semibold rounded-md px-6 py-3 transition-colors">
-                            <span>Book a Demo</span>
+                            <span>Book Enterprise Demo</span>
                         </button>
                     </div>
 

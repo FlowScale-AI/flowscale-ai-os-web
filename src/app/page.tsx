@@ -1,5 +1,6 @@
 import Navbar from "@/components/MinimalNavbar";
 import PlatformHero from "@/components/platform/PlatformHero";
+import PlatformStack from "@/components/platform/PlatformStack";
 import PlatformProblem from "@/components/platform/PlatformProblem";
 import PlatformSolution from "@/components/platform/PlatformSolution";
 import PlatformDifferentiation from "@/components/platform/PlatformDifferentiation";
@@ -23,6 +24,7 @@ export default function Home() {
 
                 <div className="relative z-10 flex flex-col">
                     <PlatformHero />
+                    <PlatformStack />
                     <PlatformProblem />
                     <PlatformSolution />
                     <PlatformDifferentiation />
