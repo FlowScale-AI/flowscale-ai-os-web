@@ -9,7 +9,10 @@ export default function PlatformFooter() {
 
                 {/* Brand */}
                 <div className="flex flex-col gap-2">
-                    <span className="text-white font-tech tracking-tight text-lg">FlowScale AI OS</span>
+                    <div className="flex items-center gap-2">
+                        <span className="text-white font-tech tracking-tight text-lg">FlowScale AI OS</span>
+                        <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10 text-[9px] font-mono-custom text-zinc-400 uppercase tracking-widest">Beta</span>
+                    </div>
                     <p className="text-zinc-500 text-sm max-w-xs">
                         The Operating System for Creative AI Production.
                     </p>
@@ -17,8 +20,8 @@ export default function PlatformFooter() {
 
                 {/* Primary Links */}
                 <div className="flex flex-wrap gap-6 items-center">
-                    <Link href="/platform" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
-                        Platform
+                    <Link href="/" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                        Home
                     </Link>
                     <Link href="/about" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
                         About

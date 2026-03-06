@@ -11,16 +11,13 @@ export default function MinimalNavbar() {
             {/* Logo */}
             <div className="flex gap-3 items-center">
                 <img src="/flowscale-white-logo-full.png" alt="FlowScale" className="h-6 w-auto" />
+                <div className="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[9px] font-mono-custom text-emerald-500 uppercase tracking-widest mt-0.5 hidden sm:block cursor-default">Beta</div>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
                 <Link href="/" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
                     Home
-                </Link>
-
-                <Link href="/platform" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
-                    Platform
                 </Link>
 
                 <Link href="/blog" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
@@ -73,10 +70,10 @@ export default function MinimalNavbar() {
                             Sign In
                         </Link>
                         <Link
-                            href="/platform"
+                            href="/download"
                             className="group hover:bg-emerald-400 hover:text-black transition-all flex text-xs font-medium text-emerald-400 bg-emerald-950/30 border border-emerald-500/30 rounded-md px-4 py-2 items-center cursor-pointer gap-2"
                         >
-                            <span>Enter the AI OS</span>
+                            <span>Try AIOS</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-0.5 transition-transform">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />

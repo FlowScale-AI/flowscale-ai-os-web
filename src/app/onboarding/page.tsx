@@ -57,8 +57,7 @@ export default function OnboardingPage() {
                 {/* Navbar */}
                 <nav className="relative z-10 p-6 md:px-12 flex items-center justify-between border-b border-white/5">
                     <Link href="/" className="flex items-center gap-2 opacity-80">
-                        <img src="/logo-dark.png" alt="FlowScale" className="h-6 w-auto" />
-                        <span className="text-white font-tech tracking-tight">FlowScale</span>
+                        <img src="/flowscale-white-logo-full.png" alt="FlowScale" className="h-6 w-auto" />
                     </Link>
                     <div className="text-xs font-mono-custom text-emerald-500 flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -97,8 +96,8 @@ export default function OnboardingPage() {
                                             type="button"
                                             onClick={() => setFormData(prev => ({ ...prev, role }))}
                                             className={`p-4 rounded-xl border text-left transition-all ${formData.role === role
-                                                    ? "bg-emerald-500/10 border-emerald-500 text-emerald-400"
-                                                    : "bg-zinc-900 border-white/5 text-zinc-400 hover:border-white/20"
+                                                ? "bg-emerald-500/10 border-emerald-500 text-emerald-400"
+                                                : "bg-zinc-900 border-white/5 text-zinc-400 hover:border-white/20"
                                                 }`}
                                         >
                                             {role}

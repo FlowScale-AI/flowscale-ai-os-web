@@ -12,7 +12,7 @@ export default function PlatformHero() {
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
                 <span className="font-mono-custom text-[11px] uppercase tracking-widest text-emerald-400">
-                    FlowScale AIOS 1.0
+                    FlowScale AIOS 1.0 (Beta)
                 </span>
             </div>
 
