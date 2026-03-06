@@ -19,6 +19,10 @@ export default function MinimalNavbar() {
                     Platform
                 </Link>
 
+                <Link href="/blog" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                    Blog
+                </Link>
+
                 <Link href="/about" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
                     About
                 </Link>

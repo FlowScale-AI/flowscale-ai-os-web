@@ -14,7 +14,8 @@ export default function PlatformFooter() {
             { label: "GitHub", href: "#" }
         ],
         company: [
-            { label: "FlowScale", href: "#" }
+            { label: "FlowScale", href: "/about" },
+            { label: "Blog", href: "/blog" }
         ],
         legal: [
             { label: "Privacy", href: "#" },
