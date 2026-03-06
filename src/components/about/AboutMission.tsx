@@ -49,16 +49,16 @@ export default function AboutMission() {
 
                     <div className="space-y-6 text-zinc-400 text-lg leading-relaxed font-light mb-12">
                         <p>
-                            Today, generative AI tools are fragmented. Teams rely on multiple disconnected products, cloud services, and experimental tools that are difficult to integrate into real production environments. These tools often lack the reliability, control, and scalability required for professional creative workflows.
+                            Today's generative AI tools are fragmented and difficult to integrate into professional environments. They lack the reliability, control, and scalability that studios demand.
                         </p>
                         <p className="text-white font-medium">
                             FlowScale exists to change this.
                         </p>
                         <p>
-                            By turning AI workflows into reliable infrastructure, FlowScale allows creative teams to focus on what they do best — storytelling, design, and imagination — while AI accelerates the production process behind the scenes.
+                            We turn experimental AI workflows into reliable infrastructure. This allows creative teams to focus entirely on storytelling, design, and imagination, while we handle the acceleration behind the scenes.
                         </p>
                         <blockquote className="border-l-2 border-emerald-500/50 pl-6 py-2 mt-8">
-                            <p className="text-xl text-zinc-300 font-tech">
+                            <p className="text-xl text-zinc-300 font-tech leading-snug">
                                 "Our goal is not to automate creativity. Our goal is to build the systems that allow creative teams to create more than ever before."
                             </p>
                         </blockquote>

@@ -45,19 +45,16 @@ export default function AboutVision() {
 
                     <div className="space-y-6 text-zinc-400 text-base md:text-lg leading-relaxed font-light">
                         <p>
-                            We envision a world where creative teams operate with their own sovereign AI infrastructure — systems they fully control, adapt, and integrate into their production pipelines.
+                            We envision a world where creative teams operate their own sovereign AI infrastructure—systems they fully control and integrate directly into their pipelines.
                         </p>
                         <p>
-                            In this world, AI is not a fragmented collection of tools scattered across different platforms. Instead, it becomes a unified layer inside the creative workflow, seamlessly supporting artists, designers, filmmakers, and creative teams as they bring ideas to life.
+                            Instead of relying on fragmented, opaque cloud platforms, AI becomes a unified, local layer inside the creative workflow. Studios govern their own models, workflows, and data policies.
                         </p>
                         <p>
-                            Studios and agencies will not depend on opaque external platforms to access generative capabilities. Instead, they will run AI systems that are deeply integrated into their pipelines, tailored to their workflows, and governed by their own infrastructure and data policies.
-                        </p>
-                        <p>
-                            As a result, creative throughput increases dramatically. Smaller teams can execute ideas that previously required massive budgets and production timelines. Independent studios can deliver work at the scale of large production houses. Marketing teams can iterate on campaigns at unprecedented speed.
+                            This dramatically increases creative throughput. Small teams can execute massive ideas, and independent studios can deliver at the scale of large production houses.
                         </p>
                         <p className="text-zinc-200 font-medium">
-                            Most importantly, this transformation allows more ideas to become reality. Creativity is no longer constrained by the cost and friction of production.
+                            Creativity is no longer constrained by the cost and friction of production. AI amplifies human imagination.
                         </p>
                     </div>
                 </div>

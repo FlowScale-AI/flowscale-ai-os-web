@@ -11,7 +11,7 @@ export default function AboutBelief() {
                 </div>
 
                 <h2 className="text-2xl md:text-3xl text-zinc-500 font-tech font-light tracking-tight mb-4 text-center">
-                    The Contrarian Belief
+                    What We Believe
                 </h2>
 
                 <p className="text-3xl md:text-4xl lg:text-5xl text-white font-tech tracking-tight leading-tight text-center mb-16">
@@ -23,22 +23,17 @@ export default function AboutBelief() {
 
                     <div className="space-y-6 text-zinc-400 text-lg leading-relaxed font-light relative z-10">
                         <p>
-                            Most of the AI industry today is racing toward a future where AI replaces creative teams and generates complete content autonomously. The prevailing narrative suggests that the end state of generative AI is fully automated creativity — films, advertisements, and campaigns produced entirely by machines.
-                        </p>
-                        <p className="text-white font-medium">
-                            We believe this assumption is fundamentally wrong.
+                            The AI industry is racing toward a future of fully automated content—where machines replace creative teams entirely.
+                            <span className="text-white font-medium ml-2">We believe this assumption is fundamentally wrong.</span>
                         </p>
                         <p>
-                            As AI-generated content floods the internet, audiences are already beginning to experience the early signs of what many call "AI slop" — an overwhelming amount of synthetic, low-context content that lacks human intent and authenticity. As this trend accelerates, authenticity will become more valuable, not less.
+                            As synthetic content floods the internet, human authenticity will become more valuable, not less. The best work will emerge from hybrid pipelines, combining human storytelling with AI tools to dramatically increase speed and scale.
                         </p>
                         <p>
-                            The content that resonates most deeply with audiences will not be purely AI-generated. Instead, it will emerge from hybrid creative pipelines where human storytelling, artistic direction, and cultural understanding are combined with AI-powered tools that dramatically increase the speed and scale of production.
-                        </p>
-                        <p>
-                            In this future, AI does not replace the creative team. It becomes embedded inside the production pipeline — assisting with ideation, previsualization, iteration, editing, and scaling of creative output.
+                            AI won't replace the creative team. It will become embedded inside the production process—assisting with ideation, iteration, and scaling.
                         </p>
                         <p className="text-emerald-400 font-medium">
-                            The real revolution in generative AI will not be autonomous creativity. It will be AI-enabled creative infrastructure.
+                            The real revolution isn't autonomous creativity. It's AI-enabled creative infrastructure.
                         </p>
                     </div>
                 </div>
