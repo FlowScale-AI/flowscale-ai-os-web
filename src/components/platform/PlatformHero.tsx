@@ -32,10 +32,10 @@ export default function PlatformHero() {
 
             {/* Primary CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-16">
-                <button className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-3.5 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                <Link href="/download" className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-3.5 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]">
                     <Icon icon="solar:apple-bold" width="18" />
                     <span>Download for Mac</span>
-                </button>
+                </Link>
                 <button className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-8 py-3.5 transition-all">
                     <Icon icon="solar:calendar-date-bold" width="18" />
                     <span>Book a Demo</span>

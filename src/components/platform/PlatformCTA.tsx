@@ -1,5 +1,6 @@
 "use client";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 export default function PlatformCTA() {
     return (
@@ -24,10 +25,10 @@ export default function PlatformCTA() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-                    <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-4 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.15)]">
+                    <Link href="/download" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-4 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.15)]">
                         <Icon icon="solar:download-square-bold" width="20" />
                         <span>Download FlowScale AIOS</span>
-                    </button>
+                    </Link>
 
                     <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-emerald-950/30 border border-emerald-500/30 hover:bg-emerald-900/40 hover:border-emerald-500/50 text-emerald-400 text-sm font-medium rounded-md px-8 py-4 transition-all">
                         <Icon icon="solar:calendar-date-bold" width="20" />
