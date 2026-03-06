@@ -6,7 +6,7 @@ export default function AboutHero() {
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 mb-8 bg-zinc-900/50 border border-emerald-500/20 px-4 py-1.5 rounded-full backdrop-blur-md">
                 <span className="font-mono-custom text-[11px] uppercase tracking-widest text-emerald-400">
-                    FlowScale AI — Core Thesis
+                    FlowScale AI
                 </span>
             </div>
 
