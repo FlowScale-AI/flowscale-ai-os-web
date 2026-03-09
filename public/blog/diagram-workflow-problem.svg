@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" fill="none">
+  <defs>
+    <linearGradient id="emeraldGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="lineGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f3f46"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="380" rx="16" fill="#0e0e10"/>
+  <rect width="720" height="380" rx="16" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <rect x="200" y="24" width="320" height="52" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="46" text-anchor="middle" font-family="monospace" font-size="10" fill="#34d399" letter-spacing="2" text-transform="uppercase">AI WORKFLOWS</text>
+  <text x="360" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#71717a">(ComfyUI, custom pipelines)</text>
+
+  <!-- Arrow 1 -->
+  <line x1="360" y1="76" x2="360" y2="106" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="354,102 360,112 366,102" fill="#3f3f46"/>
+
+  <!-- Step 2 -->
+  <rect x="200" y="112" width="320" height="52" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="134" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">NODE GRAPH / LOCAL SETUP</text>
+  <text x="360" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#52525b">Stuck in experimental environments</text>
+
+  <!-- Arrow 2 -->
+  <line x1="360" y1="164" x2="360" y2="194" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="354,190 360,200 366,190" fill="#3f3f46"/>
+
+  <!-- Step 3 -->
+  <rect x="200" y="200" width="320" height="52" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="222" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">SINGLE OPERATOR</text>
+  <text x="360" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#52525b">Only the creator knows how to run it</text>
+
+  <!-- Arrow 3 -->
+  <line x1="360" y1="252" x2="360" y2="282" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="354,278 360,288 366,278" fill="#3f3f46"/>
+
+  <!-- Step 4 — blocked -->
+  <rect x="200" y="288" width="320" height="52" rx="12" fill="#7f1d1d" fill-opacity="0.15" stroke="#ef4444" stroke-opacity="0.2"/>
+  <text x="336" y="312" text-anchor="middle" font-family="monospace" font-size="10" fill="#f87171" letter-spacing="2">NOT USABLE BY THE TEAM</text>
+  <circle cx="504" cy="306" r="4" fill="none" stroke="#ef4444" stroke-opacity="0.5" stroke-width="1.5"/>
+  <line x1="501" y1="303" x2="507" y2="309" stroke="#ef4444" stroke-opacity="0.5" stroke-width="1.5"/>
+  <line x1="507" y1="303" x2="501" y2="309" stroke="#ef4444" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="360" y="328" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#52525b">Workflows never become real tools</text>
+</svg>

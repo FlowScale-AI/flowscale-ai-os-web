@@ -44,30 +44,30 @@ export default function PlatformHero() {
                     <Icon icon="solar:download-square-bold" width="18" />
                     <span>Download FlowScale</span>
                 </Link>
-                <Link href="https://docs.flowscale.ai" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-8 py-3.5 transition-all">
+                <Link href="https://ammanjsharma.notion.site/Welcome-to-FlowScale-AIOS-Documentation-31ede69d87b180bfbba7c2fe66233fbb?source=copy_link" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-8 py-3.5 transition-all">
                     <Icon icon="solar:document-text-bold" width="18" />
                     <span>Documentation</span>
                 </Link>
             </div>
 
             {/* Visual / Product Demo Frame */}
-            <div className="w-full max-w-6xl mx-auto relative rounded-xl border border-white/10 bg-black/50 backdrop-blur-sm p-2 shadow-2xl overflow-hidden mb-20 animate-float">
-                {/* Fake Window Header */}
-                <div className="flex items-center gap-2 mb-2 px-3 pb-2 border-b border-white/5 pt-1">
+            {/* <div className="w-full max-w-6xl mx-auto relative rounded-xl border border-white/10 bg-black/50 backdrop-blur-sm p-2 shadow-2xl overflow-hidden mb-20 animate-float"> */}
+            {/* Fake Window Header */}
+            {/* <div className="flex items-center gap-2 mb-2 px-3 pb-2 border-b border-white/5 pt-1">
                     <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
                     <div className="ml-4 font-mono-custom text-[10px] text-zinc-500">flowscale-aios.exe — Studio View</div>
-                </div>
+                </div> */}
 
-                {/* Video Placeholder Box */}
-                <div className="aspect-video w-full bg-[#0c0c0e] rounded-lg border border-zinc-800/50 flex flex-col items-center justify-center overflow-hidden relative">
+            {/* Video Placeholder Box */}
+            {/* <div className="aspect-video w-full bg-[#0c0c0e] rounded-lg border border-zinc-800/50 flex flex-col items-center justify-center overflow-hidden relative">
                     <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
                     <Icon icon="solar:play-circle-bold-duotone" className="text-emerald-500/50 w-20 h-20 mb-4" />
                     <p className="text-zinc-500 font-mono-custom text-xs">Product Demo Video Playing</p>
                     <p className="text-zinc-600 font-mono-custom text-[10px] mt-2">Workflow → App Transformation</p>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
 
             {/* Secondary Proof */}
             <div className="flex flex-col items-center border-t border-white/5 pt-10 w-full max-w-3xl mx-auto">

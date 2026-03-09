@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" fill="none">
+  <!-- Background -->
+  <rect width="720" height="460" rx="16" fill="#0e0e10"/>
+  <rect width="720" height="460" rx="16" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="36" text-anchor="middle" font-family="monospace" font-size="10" fill="#71717a" letter-spacing="3">CREATIVE AI PRODUCTION STACK</text>
+
+  <!-- Layer 5: Artists (top) -->
+  <rect x="140" y="60" width="440" height="50" rx="10" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="82" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">ARTISTS</text>
+  <text x="360" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Use tools across production pipelines</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="110" x2="360" y2="132" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="355,118 360,128 365,118" fill="#3f3f46"/>
+
+  <!-- Layer 4: Creative Tools -->
+  <rect x="140" y="136" width="440" height="50" rx="10" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="158" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">CREATIVE TOOLS / INTERNAL APPS</text>
+  <text x="360" y="174" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Production-ready applications</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="186" x2="360" y2="208" stroke="#34d399" stroke-opacity="0.4" stroke-width="1"/>
+  <polygon points="355,194 360,204 365,194" fill="#34d399" fill-opacity="0.4"/>
+
+  <!-- Layer 3: FlowScale (highlighted) -->
+  <rect x="140" y="212" width="440" height="60" rx="10" fill="#059669" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.35"/>
+  <!-- Glow -->
+  <rect x="142" y="214" width="436" height="56" rx="9" fill="#34d399" fill-opacity="0.03"/>
+  <text x="360" y="236" text-anchor="middle" font-family="monospace" font-size="11" fill="#34d399" letter-spacing="2" font-weight="bold">FLOWSCALE AIOS</text>
+  <text x="360" y="256" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#34d399" fill-opacity="0.6">Open-source toolization layer</text>
+  <!-- Active indicator -->
+  <circle cx="530" cy="238" r="3" fill="#34d399"/>
+  <circle cx="530" cy="238" r="6" fill="none" stroke="#34d399" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Arrow -->
+  <line x1="360" y1="272" x2="360" y2="294" stroke="#34d399" stroke-opacity="0.4" stroke-width="1"/>
+  <polygon points="355,280 360,290 365,280" fill="#34d399" fill-opacity="0.4"/>
+
+  <!-- Layer 2: AI Workflows -->
+  <rect x="140" y="298" width="440" height="50" rx="10" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="320" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">AI WORKFLOWS</text>
+  <text x="360" y="336" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">ComfyUI, custom pipelines</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="348" x2="360" y2="370" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="355,356 360,366 365,356" fill="#3f3f46"/>
+
+  <!-- Layer 1: Models / GPUs -->
+  <rect x="140" y="374" width="440" height="50" rx="10" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="396" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">MODELS / GPUS / COMPUTE</text>
+  <text x="360" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Local or cloud infrastructure</text>
+</svg>

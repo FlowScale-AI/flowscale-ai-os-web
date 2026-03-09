@@ -69,7 +69,7 @@ export default function PlatformOpenSource() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link href="https://github.com/FlowScale" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-white hover:bg-zinc-200 text-black text-sm font-semibold rounded-md px-6 py-3 transition-colors">
+                        <Link href="https://github.com/FlowScale-AI/flowscale-aios" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-white hover:bg-zinc-200 text-black text-sm font-semibold rounded-md px-6 py-3 transition-colors">
                             <Icon icon="simple-icons:github" width="18" />
                             <span>View on GitHub</span>
                         </Link>

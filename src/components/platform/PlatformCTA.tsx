@@ -38,7 +38,7 @@ export default function PlatformCTA() {
                         <span>Book Enterprise Demo</span>
                     </button>
 
-                    <Link href="https://github.com/FlowScale" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md px-6 py-4 transition-colors">
+                    <Link href="https://github.com/FlowScale-AI/flowscale-aios" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md px-6 py-4 transition-colors">
                         <Icon icon="simple-icons:github" width="20" />
                         <span>Star on GitHub</span>
                     </Link>

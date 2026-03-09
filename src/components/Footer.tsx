@@ -18,9 +18,9 @@ export default function Footer() {
           <Link href="#" className="hover:text-emerald-400 transition-colors">
             STATUS: ONLINE
           </Link>
-          <Link href="#" className="hover:text-white transition-colors">
+          <a href="https://ammanjsharma.notion.site/Welcome-to-FlowScale-AIOS-Documentation-31ede69d87b180bfbba7c2fe66233fbb?source=copy_link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             DOCS
-          </Link>
+          </a>
           <Link href="#" className="hover:text-white transition-colors">
             LEGAL
           </Link>

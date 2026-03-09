@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" fill="none">
+  <defs>
+    <linearGradient id="dashGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="320" rx="16" fill="#0e0e10"/>
+  <rect width="720" height="320" rx="16" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top: TDs -->
+  <rect x="160" y="28" width="400" height="60" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="52" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">TECHNICAL DIRECTORS / CREATIVE TECHNOLOGISTS</text>
+  <text x="360" y="72" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#71717a">Build powerful AI workflows</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="88" x2="360" y2="118" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="354,114 360,124 366,114" fill="#3f3f46"/>
+
+  <!-- Middle: Missing Layer -->
+  <rect x="160" y="124" width="400" height="60" rx="12" fill="#059669" fill-opacity="0.08" stroke="#34d399" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="360" y="150" text-anchor="middle" font-family="monospace" font-size="11" fill="#34d399" letter-spacing="2">??? MISSING LAYER</text>
+  <text x="360" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#34d399" fill-opacity="0.6">No infrastructure to convert workflows into tools</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="184" x2="360" y2="214" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="354,210 360,220 366,210" fill="#3f3f46"/>
+
+  <!-- Bottom: Artists -->
+  <rect x="160" y="220" width="400" height="60" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="244" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">ARTISTS</text>
+  <text x="360" y="264" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#71717a">Need simple, usable tools</text>
+</svg>

@@ -92,6 +92,23 @@ export default async function ArticlePage(props: { params: Promise<{ slug: strin
                             </ReactMarkdown>
                         </div>
 
+                        {/* Download CTA */}
+                        <div className="mt-20 rounded-2xl border border-emerald-500/20 bg-emerald-950/10 p-8 md:p-12 text-center">
+                            <h3 className="text-2xl md:text-3xl text-white font-tech font-light tracking-tight mb-4">
+                                Ready to get started?
+                            </h3>
+                            <p className="text-zinc-400 font-light mb-8 max-w-lg mx-auto">
+                                Download FlowScale AIOS and turn your AI workflows into production tools your entire team can use.
+                            </p>
+                            <Link
+                                href="/download"
+                                className="inline-flex items-center gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-3.5 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                            >
+                                <Icon icon="solar:download-square-bold" width="18" />
+                                <span>Download FlowScale</span>
+                            </Link>
+                        </div>
+
                         {/* Article Footer & Share */}
                         <footer className="mt-24 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-6">
                             <div className="flex items-center gap-2 text-zinc-400 text-sm">

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" fill="none">
+  <!-- Background -->
+  <rect width="720" height="400" rx="16" fill="#0e0e10"/>
+  <rect width="720" height="400" rx="16" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Step 1: Technical Directors -->
+  <rect x="180" y="24" width="360" height="56" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="46" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">TECHNICAL DIRECTORS</text>
+  <text x="360" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#71717a">Design AI workflows</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="80" x2="360" y2="108" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="354,104 360,114 366,104" fill="#3f3f46"/>
+
+  <!-- Step 2: FlowScale -->
+  <rect x="180" y="114" width="360" height="56" rx="12" fill="#059669" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.35"/>
+  <text x="360" y="136" text-anchor="middle" font-family="monospace" font-size="11" fill="#34d399" letter-spacing="2" font-weight="bold">FLOWSCALE AIOS</text>
+  <text x="360" y="156" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#34d399" fill-opacity="0.6">Turns workflows into tools</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="170" x2="360" y2="198" stroke="#34d399" stroke-opacity="0.4" stroke-width="1"/>
+  <polygon points="354,194 360,204 366,194" fill="#34d399" fill-opacity="0.4"/>
+
+  <!-- Step 3: Artists -->
+  <rect x="180" y="204" width="360" height="56" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="226" text-anchor="middle" font-family="monospace" font-size="10" fill="#a1a1aa" letter-spacing="2">ARTISTS</text>
+  <text x="360" y="246" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#71717a">Use tools in production</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="260" x2="360" y2="288" stroke="#3f3f46" stroke-width="1"/>
+  <polygon points="354,284 360,294 366,284" fill="#3f3f46"/>
+
+  <!-- Step 4: Studios -->
+  <rect x="180" y="294" width="360" height="56" rx="12" fill="#111113" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="360" y="316" text-anchor="middle" font-family="monospace" font-size="10" fill="#34d399" letter-spacing="2">STUDIOS RUN AI PIPELINES</text>
+  <text x="360" y="336" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#71717a">Sovereign creative AI infrastructure</text>
+
+  <!-- Bottom tagline -->
+  <text x="360" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#52525b">More ideas become reality.</text>
+</svg>

@@ -42,10 +42,10 @@ export default function Hero() {
             <Icon icon="solar:play-circle-linear" width="18" />
             <span>Start Free Trial</span>
           </Link>
-          <button className="flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-6 py-3 transition-all">
+          <a href="https://ammanjsharma.notion.site/Welcome-to-FlowScale-AIOS-Documentation-31ede69d87b180bfbba7c2fe66233fbb?source=copy_link" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-6 py-3 transition-all">
             <Icon icon="solar:document-text-linear" width="18" />
             <span>Read Documentation</span>
-          </button>
+          </a>
         </div>
 
         {/* Tech Stack/Trust */}
