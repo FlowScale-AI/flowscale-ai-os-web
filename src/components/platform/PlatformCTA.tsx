@@ -33,10 +33,10 @@ export default function PlatformCTA() {
                         <span>Download FlowScale</span>
                     </Link>
 
-                    <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-emerald-950/30 border border-emerald-500/30 hover:bg-emerald-900/40 hover:border-emerald-500/50 text-emerald-400 text-sm font-medium rounded-md px-8 py-4 transition-all">
+                    <a href="https://cal.com/aman-flowscale/enterprise" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-emerald-950/30 border border-emerald-500/30 hover:bg-emerald-900/40 hover:border-emerald-500/50 text-emerald-400 text-sm font-medium rounded-md px-8 py-4 transition-all">
                         <Icon icon="solar:calendar-date-bold" width="20" />
                         <span>Book Enterprise Demo</span>
-                    </button>
+                    </a>
 
                     <Link href="https://github.com/FlowScale-AI/flowscale-aios" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md px-6 py-4 transition-colors">
                         <Icon icon="simple-icons:github" width="20" />

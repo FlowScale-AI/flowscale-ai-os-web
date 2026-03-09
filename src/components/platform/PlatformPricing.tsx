@@ -94,9 +94,9 @@ export default function PlatformPricing() {
                         </div>
 
                         {/* CTA */}
-                        <button className="relative z-10 w-full flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-emerald-950 text-sm font-semibold rounded-md px-6 py-3 transition-colors">
+                        <a href="https://cal.com/aman-flowscale/enterprise" target="_blank" rel="noopener noreferrer" className="relative z-10 w-full flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-emerald-950 text-sm font-semibold rounded-md px-6 py-3 transition-colors">
                             <span>Book Enterprise Demo</span>
-                        </button>
+                        </a>
                     </div>
 
                 </div>
