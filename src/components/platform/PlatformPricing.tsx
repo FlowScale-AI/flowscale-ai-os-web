@@ -47,9 +47,9 @@ export default function PlatformPricing() {
                         </div>
 
                         {/* CTA */}
-                        <button className="w-full flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium rounded-md px-6 py-3 transition-colors border border-white/5">
+                        <a href="/download" className="w-full flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium rounded-md px-6 py-3 transition-colors border border-white/5">
                             <span>Download</span>
-                        </button>
+                        </a>
                     </div>
 
                     {/* Enterprise Plan */}

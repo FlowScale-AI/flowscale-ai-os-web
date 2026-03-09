@@ -73,10 +73,6 @@ export default function PlatformOpenSource() {
                             <Icon icon="simple-icons:github" width="18" />
                             <span>View on GitHub</span>
                         </Link>
-                        <button className="flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-6 py-3 transition-all">
-                            <Icon icon="solar:star-bold" className="text-yellow-500" width="18" />
-                            <span>Star on GitHub</span>
-                        </button>
                     </div>
                 </div>
 
