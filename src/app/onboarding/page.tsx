@@ -26,33 +26,44 @@ type FormData = {
     magicFix: string;
 };
 
+type FieldErrors = Partial<Record<string, boolean>>;
+
 function SelectGrid({
     options,
     value,
     onChange,
     cols = 2,
+    hasError,
 }: {
     options: string[];
     value: string;
     onChange: (v: string) => void;
     cols?: number;
+    hasError?: boolean;
 }) {
     return (
-        <div className={`grid gap-3 ${cols === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
-            {options.map((opt) => (
-                <button
-                    key={opt}
-                    type="button"
-                    onClick={() => onChange(opt)}
-                    className={`p-4 rounded-xl border text-left text-sm transition-all ${
-                        value === opt
-                            ? "bg-emerald-500/10 border-emerald-500 text-emerald-400"
-                            : "bg-zinc-900 border-white/5 text-zinc-400 hover:border-white/20"
-                    }`}
-                >
-                    {opt}
-                </button>
-            ))}
+        <div>
+            <div className={`grid gap-3 ${cols === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
+                {options.map((opt) => (
+                    <button
+                        key={opt}
+                        type="button"
+                        onClick={() => onChange(opt)}
+                        className={`p-4 rounded-xl border text-left text-sm transition-all ${
+                            value === opt
+                                ? "bg-emerald-500/10 border-emerald-500 text-emerald-400"
+                                : hasError
+                                ? "bg-zinc-900 border-red-500/30 text-zinc-400 hover:border-white/20"
+                                : "bg-zinc-900 border-white/5 text-zinc-400 hover:border-white/20"
+                        }`}
+                    >
+                        {opt}
+                    </button>
+                ))}
+            </div>
+            {hasError && (
+                <p className="text-red-400 text-xs mt-2 ml-1">Please select an option</p>
+            )}
         </div>
     );
 }
@@ -62,21 +73,30 @@ function OtherInput({
     value,
     onChange,
     placeholder,
+    hasError,
 }: {
     visible: boolean;
     value: string;
     onChange: (v: string) => void;
     placeholder?: string;
+    hasError?: boolean;
 }) {
     if (!visible) return null;
     return (
-        <input
-            type="text"
-            className="mt-2 h-12 w-full bg-zinc-900 border border-white/5 rounded-xl px-4 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light"
-            placeholder={placeholder ?? "Please specify…"}
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-        />
+        <div>
+            <input
+                type="text"
+                className={`mt-2 h-12 w-full bg-zinc-900 border rounded-xl px-4 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light ${
+                    hasError ? "border-red-500/30" : "border-white/5"
+                }`}
+                placeholder={placeholder ?? "Please specify…"}
+                value={value}
+                onChange={(e) => onChange(e.target.value)}
+            />
+            {hasError && (
+                <p className="text-red-400 text-xs mt-1 ml-1">Please specify your answer</p>
+            )}
+        </div>
     );
 }
 
@@ -86,7 +106,9 @@ function SectionLabel({ number, children }: { number: number; children: React.Re
             <span className="shrink-0 w-7 h-7 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs flex items-center justify-center font-mono-custom">
                 {number}
             </span>
-            <label className="text-sm font-medium text-zinc-200 leading-7">{children}</label>
+            <label className="text-sm font-medium text-zinc-200 leading-7">
+                {children} <span className="text-red-400">*</span>
+            </label>
         </div>
     );
 }
@@ -97,6 +119,8 @@ export default function OnboardingPage() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
+    const [attemptedSubmit, setAttemptedSubmit] = useState(false);
 
     const [formData, setFormData] = useState<FormData>({
         role: "",
@@ -123,14 +147,57 @@ export default function OnboardingPage() {
         }
     }, [hasOnboarded, router]);
 
-    const set = (key: keyof FormData) => (value: string) =>
+    const set = (key: keyof FormData) => (value: string) => {
         setFormData((prev) => ({ ...prev, [key]: value }));
+        if (attemptedSubmit) {
+            setFieldErrors((prev) => ({ ...prev, [key]: false }));
+        }
+    };
+
+    const validate = (): boolean => {
+        const errors: FieldErrors = {};
+
+        // Select fields
+        if (!formData.role) errors.role = true;
+        if (formData.role === "Other" && !formData.roleOther.trim()) errors.roleOther = true;
+
+        if (!formData.industry) errors.industry = true;
+        if (formData.industry === "Other" && !formData.industryOther.trim()) errors.industryOther = true;
+
+        if (!formData.currentWorkflow) errors.currentWorkflow = true;
+        if (formData.currentWorkflow === "Other" && !formData.workflowOther.trim()) errors.workflowOther = true;
+
+        if (!formData.biggestChallenge) errors.biggestChallenge = true;
+        if (formData.biggestChallenge === "Other" && !formData.challengeOther.trim()) errors.challengeOther = true;
+
+        if (!formData.teamSize) errors.teamSize = true;
+        if (!formData.runLocation) errors.runLocation = true;
+
+        if (!formData.firstBuild) errors.firstBuild = true;
+        if (formData.firstBuild === "Other" && !formData.firstBuildOther.trim()) errors.firstBuildOther = true;
+
+        // Text fields
+        if (!formData.email.trim()) errors.email = true;
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) errors.email = true;
+
+        if (!formData.company.trim()) errors.company = true;
+        if (!formData.magicFix.trim()) errors.magicFix = true;
+
+        setFieldErrors(errors);
+        return Object.keys(errors).length === 0;
+    };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setAttemptedSubmit(true);
 
         if (!user) {
             setError("You must be logged in to continue.");
+            return;
+        }
+
+        if (!validate()) {
+            setError("Please fill in all required fields before continuing.");
             return;
         }
 
@@ -177,6 +244,9 @@ export default function OnboardingPage() {
                             <p className="text-zinc-400 text-lg">
                                 Help us understand how you currently build AI workflows and how FlowScale AIOS can fit into your creative pipeline.
                             </p>
+                            <p className="text-zinc-500 text-sm mt-3">
+                                All fields marked with <span className="text-red-400">*</span> are required.
+                            </p>
                         </div>
 
                         {error && (
@@ -204,12 +274,14 @@ export default function OnboardingPage() {
                                     ]}
                                     value={formData.role}
                                     onChange={set("role")}
+                                    hasError={fieldErrors.role}
                                 />
                                 <OtherInput
                                     visible={formData.role === "Other"}
                                     value={formData.roleOther}
                                     onChange={set("roleOther")}
                                     placeholder="Describe your role…"
+                                    hasError={fieldErrors.roleOther}
                                 />
                             </div>
 
@@ -230,12 +302,14 @@ export default function OnboardingPage() {
                                     ]}
                                     value={formData.industry}
                                     onChange={set("industry")}
+                                    hasError={fieldErrors.industry}
                                 />
                                 <OtherInput
                                     visible={formData.industry === "Other"}
                                     value={formData.industryOther}
                                     onChange={set("industryOther")}
                                     placeholder="Describe your industry…"
+                                    hasError={fieldErrors.industryOther}
                                 />
                             </div>
 
@@ -254,12 +328,14 @@ export default function OnboardingPage() {
                                     ]}
                                     value={formData.currentWorkflow}
                                     onChange={set("currentWorkflow")}
+                                    hasError={fieldErrors.currentWorkflow}
                                 />
                                 <OtherInput
                                     visible={formData.currentWorkflow === "Other"}
                                     value={formData.workflowOther}
                                     onChange={set("workflowOther")}
                                     placeholder="Describe your current tools…"
+                                    hasError={fieldErrors.workflowOther}
                                 />
                             </div>
 
@@ -278,12 +354,14 @@ export default function OnboardingPage() {
                                     ]}
                                     value={formData.biggestChallenge}
                                     onChange={set("biggestChallenge")}
+                                    hasError={fieldErrors.biggestChallenge}
                                 />
                                 <OtherInput
                                     visible={formData.biggestChallenge === "Other"}
                                     value={formData.challengeOther}
                                     onChange={set("challengeOther")}
                                     placeholder="Describe your challenge…"
+                                    hasError={fieldErrors.challengeOther}
                                 />
                             </div>
 
@@ -294,6 +372,7 @@ export default function OnboardingPage() {
                                     options={["Just me", "2–5 people", "6–20 people", "20–100 people", "100+ people"]}
                                     value={formData.teamSize}
                                     onChange={set("teamSize")}
+                                    hasError={fieldErrors.teamSize}
                                 />
                             </div>
 
@@ -310,6 +389,7 @@ export default function OnboardingPage() {
                                     ]}
                                     value={formData.runLocation}
                                     onChange={set("runLocation")}
+                                    hasError={fieldErrors.runLocation}
                                 />
                             </div>
 
@@ -327,59 +407,83 @@ export default function OnboardingPage() {
                                     ]}
                                     value={formData.firstBuild}
                                     onChange={set("firstBuild")}
+                                    hasError={fieldErrors.firstBuild}
                                 />
                                 <OtherInput
                                     visible={formData.firstBuild === "Other"}
                                     value={formData.firstBuildOther}
                                     onChange={set("firstBuildOther")}
                                     placeholder="Describe what you'd build…"
+                                    hasError={fieldErrors.firstBuildOther}
                                 />
                             </div>
 
-                            {/* Q8 – Optional contact */}
+                            {/* Q8 – Contact info */}
                             <div className="flex flex-col gap-4">
-                                <SectionLabel number={8}>Would you like updates from FlowScale?</SectionLabel>
-                                <p className="text-xs text-zinc-500 -mt-2 ml-10">Optional — share as much or as little as you like.</p>
+                                <SectionLabel number={8}>Your contact details</SectionLabel>
                                 <div className="flex flex-col gap-3 ml-0">
-                                    <input
-                                        type="email"
-                                        className="h-12 bg-zinc-900 border border-white/5 rounded-xl px-4 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light"
-                                        placeholder="Email address"
-                                        value={formData.email}
-                                        onChange={(e) => set("email")(e.target.value)}
-                                    />
+                                    <div>
+                                        <input
+                                            type="email"
+                                            className={`h-12 w-full bg-zinc-900 border rounded-xl px-4 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light ${
+                                                fieldErrors.email ? "border-red-500/30" : "border-white/5"
+                                            }`}
+                                            placeholder="Email address *"
+                                            value={formData.email}
+                                            onChange={(e) => set("email")(e.target.value)}
+                                        />
+                                        {fieldErrors.email && (
+                                            <p className="text-red-400 text-xs mt-1 ml-1">Please enter a valid email address</p>
+                                        )}
+                                    </div>
                                     <input
                                         type="text"
                                         className="h-12 bg-zinc-900 border border-white/5 rounded-xl px-4 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light"
-                                        placeholder="GitHub username"
+                                        placeholder="GitHub username (optional)"
                                         value={formData.github}
                                         onChange={(e) => set("github")(e.target.value)}
                                     />
-                                    <input
-                                        type="text"
-                                        className="h-12 bg-zinc-900 border border-white/5 rounded-xl px-4 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light"
-                                        placeholder="Company / Studio name"
-                                        value={formData.company}
-                                        onChange={(e) => set("company")(e.target.value)}
-                                    />
+                                    <div>
+                                        <input
+                                            type="text"
+                                            className={`h-12 w-full bg-zinc-900 border rounded-xl px-4 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light ${
+                                                fieldErrors.company ? "border-red-500/30" : "border-white/5"
+                                            }`}
+                                            placeholder="Company / Studio name *"
+                                            value={formData.company}
+                                            onChange={(e) => set("company")(e.target.value)}
+                                        />
+                                        {fieldErrors.company && (
+                                            <p className="text-red-400 text-xs mt-1 ml-1">Please enter your company or studio name</p>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
 
                             {/* Final question */}
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-col gap-1">
-                                    <span className="text-sm font-medium text-zinc-200">Final Question</span>
+                                    <span className="text-sm font-medium text-zinc-200">
+                                        Final Question <span className="text-red-400">*</span>
+                                    </span>
                                     <p className="text-sm text-zinc-400">
                                         If you could magically fix <span className="text-white font-medium">one problem</span> in your AI workflow today, what would it be?
                                     </p>
                                 </div>
-                                <textarea
-                                    rows={4}
-                                    className="bg-zinc-900 border border-white/5 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light resize-none"
-                                    placeholder="Tell us in your own words…"
-                                    value={formData.magicFix}
-                                    onChange={(e) => set("magicFix")(e.target.value)}
-                                />
+                                <div>
+                                    <textarea
+                                        rows={4}
+                                        className={`w-full bg-zinc-900 border rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500/50 transition-all font-light resize-none ${
+                                            fieldErrors.magicFix ? "border-red-500/30" : "border-white/5"
+                                        }`}
+                                        placeholder="Tell us in your own words…"
+                                        value={formData.magicFix}
+                                        onChange={(e) => set("magicFix")(e.target.value)}
+                                    />
+                                    {fieldErrors.magicFix && (
+                                        <p className="text-red-400 text-xs mt-1 ml-1">Please answer this question</p>
+                                    )}
+                                </div>
                             </div>
 
                             {/* Discord Notice */}
