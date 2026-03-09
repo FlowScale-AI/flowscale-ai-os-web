@@ -30,14 +30,16 @@ export default function OnboardingPage() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (!user) return;
+        if (!user) {
+            setError("You must be logged in to continue.");
+            return;
+        }
 
         setIsSubmitting(true);
         setError(null);
 
         try {
             await completeOnboarding(user.uid, formData);
-            // Refresh context state
             await checkOnboarding(user.uid);
             router.push("/download");
         } catch (err: any) {
