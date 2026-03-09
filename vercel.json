@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/install_linux.sh",
+      "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/install_linux.sh",
+      "permanent": false
+    },
+    {
+      "source": "/install_mac.sh",
+      "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/install_mac.sh",
+      "permanent": false
+    }
+  ]
+}
