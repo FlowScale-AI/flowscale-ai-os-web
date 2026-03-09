@@ -12,8 +12,21 @@ export interface UserProfile {
     hasCompletedOnboarding: boolean;
     onboardingData?: {
         role: string;
-        studioName?: string;
-        primaryUseCase: string;
+        roleOther?: string;
+        industry?: string;
+        industryOther?: string;
+        currentWorkflow?: string;
+        workflowOther?: string;
+        biggestChallenge?: string;
+        challengeOther?: string;
+        teamSize?: string;
+        runLocation?: string;
+        firstBuild?: string;
+        firstBuildOther?: string;
+        email?: string;
+        github?: string;
+        company?: string;
+        magicFix?: string;
     };
     createdAt: any;
     lastLoginAt: any;

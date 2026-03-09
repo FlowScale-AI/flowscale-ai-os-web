@@ -116,8 +116,29 @@ export default function DownloadPage() {
                                 </div>
                             </div>
 
+                            {/* Discord */}
+                            <div className="mt-16 max-w-2xl mx-auto bg-[#5865F2]/10 border border-[#5865F2]/20 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-6 justify-between">
+                                <div className="flex items-start gap-4">
+                                    <Icon icon="simple-icons:discord" className="text-[#5865F2] text-4xl shrink-0" />
+                                    <div className="text-left">
+                                        <h4 className="text-white font-medium mb-1">Join the Core Community</h4>
+                                        <p className="text-zinc-400 text-sm">
+                                            The FlowScale engineering team and early adopters collaborate daily in our Discord.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a
+                                    href="https://discord.gg/XgPTrNM7Du"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="shrink-0 w-full sm:w-auto text-center px-6 py-3 bg-[#5865F2] text-white text-sm font-medium rounded-xl hover:bg-[#4752C4] transition-colors"
+                                >
+                                    Join Discord
+                                </a>
+                            </div>
+
                             {/* Sign Out Button */}
-                            <div className="mt-20 flex justify-center">
+                            <div className="mt-10 flex justify-center">
                                 <button
                                     onClick={logout}
                                     className="text-zinc-500 hover:text-white transition-colors text-sm font-mono-custom flex items-center gap-2 border border-transparent hover:border-white/5 px-4 py-2 rounded-lg"
