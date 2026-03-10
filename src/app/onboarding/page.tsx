@@ -320,9 +320,7 @@ export default function OnboardingPage() {
                                     options={[
                                         "ComfyUI",
                                         "Custom Python pipelines",
-                                        "Node-based tools (TouchDesigner, etc.)",
                                         "LangChain / Agent workflows",
-                                        "Stable Diffusion tools",
                                         "Not building workflows yet",
                                         "Other",
                                     ]}
