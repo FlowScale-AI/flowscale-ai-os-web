@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 // For static export generation
 export async function generateStaticParams() {
@@ -87,7 +88,7 @@ export default async function ArticlePage(props: { params: Promise<{ slug: strin
                         {/* Article Content - rendered with ReactMarkdown */}
                         {/* Using @tailwindcss/typography .prose classes for elegant formatting */}
                         <div className="prose prose-invert prose-emerald prose-lg md:prose-xl max-w-none text-zinc-300 font-light leading-relaxed font-sans prose-headings:font-tech prose-headings:font-light prose-h3:text-zinc-200 prose-p:mb-8">
-                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
                                 {post.content}
                             </ReactMarkdown>
                         </div>

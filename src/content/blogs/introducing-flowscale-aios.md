@@ -9,6 +9,17 @@ coverImage: "/blog/flowscalebanner.png"
 
 *Turn AI workflows into real creative tools.*
 
+<div class="my-8 aspect-video w-full rounded-xl overflow-hidden shadow-2xl border border-white/5 bg-zinc-900">
+  <iframe 
+    class="w-full h-full"
+    src="https://www.youtube.com/embed/F8kRteErxRE" 
+    title="FlowScale AIOS Video" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 ---
 
 ## The Shift Happening Inside Creative Teams

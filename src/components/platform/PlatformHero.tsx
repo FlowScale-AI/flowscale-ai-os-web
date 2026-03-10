@@ -1,8 +1,23 @@
 "use client";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import { useState, useRef } from "react";
 
 export default function PlatformHero() {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    const togglePlay = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+        }
+    };
+
     return (
         <section className="relative z-20 flex flex-col items-center justify-center pt-32 pb-20 px-6 md:px-12 text-center min-h-[85vh]">
             {/* Top Badge */}
@@ -51,23 +66,43 @@ export default function PlatformHero() {
             </div>
 
             {/* Visual / Product Demo Frame */}
-            {/* <div className="w-full max-w-6xl mx-auto relative rounded-xl border border-white/10 bg-black/50 backdrop-blur-sm p-2 shadow-2xl overflow-hidden mb-20 animate-float"> */}
-            {/* Fake Window Header */}
-            {/* <div className="flex items-center gap-2 mb-2 px-3 pb-2 border-b border-white/5 pt-1">
+            <div className="w-full max-w-6xl mx-auto relative rounded-xl border border-white/10 bg-black/50 backdrop-blur-sm p-2 shadow-2xl overflow-hidden mb-20 animate-float">
+                {/* Fake Window Header */}
+                <div className="flex items-center gap-2 mb-2 px-3 pb-2 border-b border-white/5 pt-1">
                     <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
                     <div className="ml-4 font-mono-custom text-[10px] text-zinc-500">flowscale-aios.exe — Studio View</div>
-                </div> */}
+                </div>
 
-            {/* Video Placeholder Box */}
-            {/* <div className="aspect-video w-full bg-[#0c0c0e] rounded-lg border border-zinc-800/50 flex flex-col items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
-                    <Icon icon="solar:play-circle-bold-duotone" className="text-emerald-500/50 w-20 h-20 mb-4" />
-                    <p className="text-zinc-500 font-mono-custom text-xs">Product Demo Video Playing</p>
-                    <p className="text-zinc-600 font-mono-custom text-[10px] mt-2">Workflow → App Transformation</p>
-                </div> */}
-            {/* </div> */}
+                {/* Video Player Box */}
+                <div
+                    className="aspect-video w-full bg-[#0c0c0e] rounded-lg border border-zinc-800/50 overflow-hidden relative cursor-pointer group"
+                    onClick={togglePlay}
+                >
+                    <video
+                        ref={videoRef}
+                        src="/hero-video.mp4"
+                        playsInline
+                        className="w-full h-full object-cover"
+                        onEnded={() => setIsPlaying(false)}
+                        poster="/blog/flowscalebanner.png"
+                    />
+
+                    {/* Play Button Overlay */}
+                    <div className={`absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px] transition-all duration-300 ${isPlaying ? 'opacity-0 scale-110 pointer-events-none' : 'opacity-100 scale-100'}`}>
+                        <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center backdrop-blur-md group-hover:scale-110 group-hover:bg-emerald-500/30 transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+                            <Icon
+                                icon="solar:play-bold"
+                                className="text-white w-10 h-10 md:w-12 md:h-12 ml-1"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Subtle Gradient Bottom overlay (for aesthetics) */}
+                    <div className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                </div>
+            </div>
 
             {/* Secondary Proof */}
             <div className="flex flex-col items-center border-t border-white/5 pt-10 w-full max-w-3xl mx-auto">
