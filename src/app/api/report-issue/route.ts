@@ -1,24 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
-import { initializeApp, getApps, cert } from "firebase-admin/app";
-import { getFirestore } from "firebase-admin/firestore";
-
-// Initialise Admin SDK once (survives Next.js hot-reloads)
-if (!getApps().length) {
-  initializeApp({
-    credential: cert({
-      projectId: process.env.FIREBASE_ADMIN_PROJECT_ID,
-      clientEmail: process.env.FIREBASE_ADMIN_CLIENT_EMAIL,
-      // Vercel stores multiline secrets with literal \n — replace them
-      privateKey: process.env.FIREBASE_ADMIN_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-    }),
-  });
-}
-
-const db = getFirestore();
+import { db } from "@/lib/firebase/config";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 const WINDOW_MS = 60_000; // 1 minute
 const MAX_REQUESTS = 10;
 
+// ip -> list of request timestamps within the current window
 const rateLimitMap = new Map<string, number[]>();
 
 function isRateLimited(ip: string): boolean {
@@ -61,12 +48,12 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "description is required" }, { status: 400, headers: CORS_HEADERS });
     }
 
-    await db.collection("issue_reports").add({
+    await addDoc(collection(db, "issue_reports"), {
       description: description.trim(),
       version: version ?? null,
       platform: platform ?? null,
       logs: logs ?? null,
-      createdAt: new Date(),
+      createdAt: serverTimestamp(),
     });
 
     return NextResponse.json({ ok: true }, { headers: CORS_HEADERS });
