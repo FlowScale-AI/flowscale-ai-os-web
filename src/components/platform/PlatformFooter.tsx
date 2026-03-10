@@ -36,6 +36,16 @@ export default function PlatformFooter() {
                     <div className="w-[1px] h-4 bg-white/10 hidden sm:block"></div>
 
                     <a
+                        href="https://discord.gg/XgPTrNM7Du"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-zinc-500 hover:text-[#5865F2] transition-colors flex items-center gap-2 text-sm"
+                    >
+                        <Icon icon="simple-icons:discord" />
+                        <span>Discord</span>
+                    </a>
+
+                    <a
                         href="https://github.com/FlowScale-AI/flowscale-aios"
                         target="_blank"
                         rel="noreferrer"

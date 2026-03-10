@@ -21,6 +21,9 @@ export default function Footer() {
           <a href="https://ammanjsharma.notion.site/Welcome-to-FlowScale-AIOS-Documentation-31ede69d87b180bfbba7c2fe66233fbb?source=copy_link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             DOCS
           </a>
+          <a href="https://discord.gg/XgPTrNM7Du" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            DISCORD
+          </a>
           <Link href="#" className="hover:text-white transition-colors">
             LEGAL
           </Link>

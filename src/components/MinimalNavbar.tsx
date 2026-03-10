@@ -35,15 +35,27 @@ export default function MinimalNavbar() {
 
             {/* CTA */}
             <div className="flex items-center gap-4 lg:gap-6">
-                <a
-                    href="https://github.com/FlowScale-AI/flowscale-aios"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hidden sm:flex items-center justify-center text-zinc-400 hover:text-white transition-colors"
-                    aria-label="GitHub"
-                >
-                    <Icon icon="simple-icons:github" width="20" />
-                </a>
+                <div className="hidden sm:flex items-center gap-4">
+                    <a
+                        href="https://discord.gg/XgPTrNM7Du"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zinc-400 hover:text-[#5865F2] transition-colors"
+                        aria-label="Discord"
+                    >
+                        <Icon icon="simple-icons:discord" width="20" />
+                    </a>
+
+                    <a
+                        href="https://github.com/FlowScale-AI/flowscale-aios"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zinc-400 hover:text-white transition-colors"
+                        aria-label="GitHub"
+                    >
+                        <Icon icon="simple-icons:github" width="20" />
+                    </a>
+                </div>
 
                 {!loading && user ? (
                     <div className="flex items-center gap-4">

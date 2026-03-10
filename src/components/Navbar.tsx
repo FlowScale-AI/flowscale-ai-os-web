@@ -34,9 +34,18 @@ export default function Navbar() {
 
       {/* CTA */}
       <div className="flex items-center gap-4">
+        <a
+          href="https://discord.gg/XgPTrNM7Du"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden sm:flex text-zinc-400 hover:text-[#5865F2] transition-colors"
+          aria-label="Discord"
+        >
+          <Icon icon="simple-icons:discord" width="20" />
+        </a>
         <button
           onClick={() => window.location.assign("/os/login")}
-          className="hidden sm:block text-xs font-medium text-zinc-400 hover:text-white font-mono-custom"
+          className="hidden sm:block text-xs font-medium text-zinc-400 hover:text-white font-mono-custom ml-2"
         >
           Sign In
         </button>
