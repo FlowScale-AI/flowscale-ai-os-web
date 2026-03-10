@@ -7,7 +7,7 @@ import { useAuth } from "@/context/AuthContext";
 import { logout } from "@/lib/firebase/auth";
 import { Icon } from "@iconify/react";
 
-const MAC_INSTALL_CMD = "sudo curl -fsSL https://flowscale.ai/install_mac.sh | bash";
+const MAC_INSTALL_CMD = "curl -fsSL https://flowscale.ai/install_mac.sh | sudo bash";
 const LINUX_INSTALL_CMD = "sudo curl -fsSL https://flowscale.ai/install_linux.sh | bash";
 
 export default function DownloadPage() {
