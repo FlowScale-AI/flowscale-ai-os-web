@@ -11,6 +11,11 @@
       "permanent": false
     },
     {
+      "source": "/update_mac.sh",
+      "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/update_mac.sh",
+      "permanent": false
+    },
+    {
       "source": "/install_windows.ps1",
       "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/install_windows.ps1",
       "permanent": false
