@@ -53,7 +53,7 @@ export default function DownloadPage() {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                                 {/* Windows Download */}
                                 <a
-                                    href="#"
+                                    href="/download_windows.exe"
                                     className="group bg-zinc-900 border border-white/5 rounded-2xl p-8 hover:bg-[#111113] hover:border-white/10 transition-all flex flex-col items-center gap-6"
                                 >
                                     <div className="w-20 h-20 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform">
