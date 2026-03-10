@@ -42,14 +42,19 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json();
-    const { description, version, platform, logs } = body;
+    const { description, email, version, platform, logs } = body;
 
     if (!description || typeof description !== "string" || description.trim().length === 0) {
       return NextResponse.json({ error: "description is required" }, { status: 400, headers: CORS_HEADERS });
     }
 
+    if (email !== undefined && (typeof email !== "string" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))) {
+      return NextResponse.json({ error: "invalid email address" }, { status: 400, headers: CORS_HEADERS });
+    }
+
     await addDoc(collection(db, "issue_reports"), {
       description: description.trim(),
+      email: email?.trim() ?? null,
       version: version ?? null,
       platform: platform ?? null,
       logs: logs ?? null,
