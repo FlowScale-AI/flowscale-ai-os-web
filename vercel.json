@@ -29,6 +29,16 @@
       "source": "/download_windows.exe",
       "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/FlowScale+AI+OS+Setup+0.2.6.exe",
       "permanent": false
+    },
+    {
+      "source": "/tools/registry.json",
+      "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/tools/registry.json",
+      "permanent": false
+    },
+    {
+      "source": "/tools/:path*",
+      "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/tools/:path*",
+      "permanent": false
     }
   ]
 }
