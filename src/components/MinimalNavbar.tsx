@@ -82,10 +82,6 @@ export default function MinimalNavbar() {
                     </div>
                 ) : (
                     <div className="flex items-center gap-4">
-                        <Link href="https://github.com/FlowScale-AI/flowscale-aios" target="_blank" rel="noopener noreferrer" className="group hidden sm:flex items-center gap-2 text-xs font-medium text-zinc-300 bg-zinc-900 border border-zinc-700/50 hover:bg-zinc-800 hover:border-zinc-600 rounded-md px-4 py-2 transition-all">
-                            <Icon icon="simple-icons:github" width="14" />
-                            <span>Star on GitHub</span>
-                        </Link>
                         <Link
                             href="/download"
                             className="group hover:bg-emerald-400 hover:text-black transition-all flex text-xs font-medium text-emerald-400 bg-emerald-950/30 border border-emerald-500/30 rounded-md px-4 py-2 items-center cursor-pointer gap-2"

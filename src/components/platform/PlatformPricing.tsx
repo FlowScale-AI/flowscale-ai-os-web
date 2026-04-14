@@ -72,7 +72,7 @@ export default function PlatformPricing() {
                             <div className="space-y-4 mb-10">
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-emerald-500 w-5 h-5 shrink-0" />
-                                    <span className="text-zinc-200">Custom integrations with DCC tools</span>
+                                    <span className="text-zinc-200">Custom integrations with DCC tools (Blender, Unreal, Maya, etc.)</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <Icon icon="solar:check-circle-bold-duotone" className="text-emerald-500 w-5 h-5 shrink-0" />

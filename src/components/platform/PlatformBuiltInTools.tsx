@@ -4,30 +4,30 @@ import { useState, useEffect } from "react";
 
 export default function PlatformBuiltInTools() {
     const toolsList = [
-        { 
-            title: "Image generation tools", 
-            subline: "(Flux, SDXL, etc.)", 
+        {
+            title: "Image generation tools",
+            subline: "(Z-Image Turbo, Qwen Image Edit, etc.)",
             icon: "solar:gallery-wide-bold-duotone",
             mockBtn: "Generate",
             mockContent: "🖼️ Image Generation Screenshot Here"
         },
-        { 
-            title: "Video generation tools", 
-            subline: "(Kling, Gen-3, etc.)", 
+        {
+            title: "Video generation tools",
+            subline: "(LTX 2.3, etc.)",
             icon: "solar:videocamera-record-bold-duotone",
             mockBtn: "Create Video",
             mockContent: "🎬 Video Generation Screenshot Here"
         },
-        { 
-            title: "LoRA training tools", 
-            subline: "(train on your own data)", 
+        {
+            title: "LoRA training tools",
+            subline: "(train on your own data)",
             icon: "solar:cpu-bolt-line-duotone",
             mockBtn: "Start Training",
             mockContent: "📈 LoRA Training Screenshot Here"
         },
-        { 
-            title: "Custom tools", 
-            subline: "(built with ComfyUI workflows)", 
+        {
+            title: "Custom tools",
+            subline: "(built with ComfyUI workflows)",
             icon: "solar:magic-stick-3-bold-duotone",
             mockBtn: "Run Workflow",
             mockContent: "⚙️ Custom Workflow Screenshot Here"
@@ -36,20 +36,20 @@ export default function PlatformBuiltInTools() {
 
     const [activeIdx, setActiveIdx] = useState(0);
 
-    // Auto-switch tools every 4 seconds
+    // Auto-switch tools every 4.5 seconds. Resets timer if user manually clicks.
     useEffect(() => {
-        const interval = setInterval(() => {
+        const timeout = setTimeout(() => {
             setActiveIdx((prev) => (prev + 1) % toolsList.length);
-        }, 4000);
-        return () => clearInterval(interval);
-    }, [toolsList.length]);
+        }, 4500);
+        return () => clearTimeout(timeout);
+    }, [activeIdx, toolsList.length]);
 
     const activeTool = toolsList[activeIdx];
 
     return (
         <section className="relative z-20 bg-[#0a0a0a] border-t border-white/5 py-32 px-6 md:px-12">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-                
+
                 {/* Left content */}
                 <div className="w-full lg:w-[45%]">
                     <p className="font-mono-custom text-[11px] text-emerald-500 uppercase tracking-widest mb-4">
@@ -59,7 +59,7 @@ export default function PlatformBuiltInTools() {
                         Start using AI <br />
                         <span className="text-emerald-400">immediately.</span>
                     </h2>
-                    
+
                     <p className="text-lg text-zinc-400 font-light leading-relaxed mb-10">
                         AIOS comes with production-ready tools you can run instantly:
                     </p>
@@ -68,8 +68,8 @@ export default function PlatformBuiltInTools() {
                         {toolsList.map((tool, idx) => {
                             const isActive = activeIdx === idx;
                             return (
-                                <div 
-                                    key={idx} 
+                                <div
+                                    key={idx}
                                     onClick={() => setActiveIdx(idx)}
                                     className={`flex items-start gap-4 p-4 rounded-xl cursor-pointer transition-all duration-300 ${isActive ? 'bg-[#111113] border border-white/10 shadow-[0_0_30px_rgba(16,185,129,0.03)]' : 'hover:bg-white/5 border border-transparent opacity-60 hover:opacity-100'}`}
                                 >
@@ -90,7 +90,7 @@ export default function PlatformBuiltInTools() {
                 <div className="w-full lg:w-[55%] relative">
                     {/* Aesthetic Mac-like OS Window Wrapper */}
                     <div className="bg-[#0c0c0e] rounded-xl border border-white/10 shadow-[0_0_50px_rgba(16,185,129,0.05)] overflow-hidden relative group">
-                        
+
                         {/* Traffic lights header */}
                         <div className="h-10 bg-[#111113] border-b border-white/5 flex items-center px-4 gap-2">
                             <div className="w-3 h-3 rounded-full bg-zinc-700"></div>

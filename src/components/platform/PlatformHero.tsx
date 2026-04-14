@@ -26,14 +26,14 @@ export default function PlatformHero() {
                     Open source · Self-hosted · Free forever
                     <span className="w-8 h-[1px] bg-emerald-500/30"></span>
                 </p>
-                
+
                 <h1 className="text-5xl md:text-7xl font-tech text-white leading-[1.1] tracking-tight mb-8 drop-shadow-2xl">
                     Run AI tools on your own infrastructure — <br className="hidden md:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-emerald-400 to-emerald-600 animate-pulse-slow">across all your GPUs.</span>
                 </h1>
-                
+
                 <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-3xl mx-auto leading-relaxed mb-12">
-                    FlowScale AIOS gives creative teams ready-to-use AI tools for generation and training — running in parallel across every GPU you own, with optional burst to your private cloud (via Modal.com).
+                    FlowScale AIOS gives creative teams ready-to-use AI tools for generation and training — running in parallel across every GPU you own, with optional burst to your trusted private cloud.
                 </p>
             </div>
 
