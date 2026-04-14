@@ -30,10 +30,10 @@ export default function PlatformCTA() {
                         <span>Download AIOS</span>
                     </Link>
 
-                    <Link href="https://youtu.be/F8kRteErxRE" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md px-6 py-4 transition-colors">
+                    <a href="#demo-section" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md px-6 py-4 transition-colors">
                         <Icon icon="solar:play-circle-bold" width="20" />
-                        <span>Watch demo — 4 min</span>
-                    </Link>
+                        <span>Watch full demo</span>
+                    </a>
                 </div>
 
             </div>
