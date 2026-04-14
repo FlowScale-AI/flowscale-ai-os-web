@@ -20,49 +20,33 @@ export default function PlatformHero() {
 
     return (
         <section className="relative z-20 flex flex-col items-center justify-center pt-32 pb-20 px-6 md:px-12 text-center min-h-[85vh]">
-            {/* Top Badge */}
-            <div className="inline-flex items-center gap-2 mb-8 bg-zinc-900/50 border border-white/10 px-4 py-1.5 rounded-full backdrop-blur-md">
-                <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </span>
-                <span className="font-mono-custom text-[11px] uppercase tracking-widest text-emerald-400">
-                    FlowScale AIOS — v1.0 (Beta)
-                </span>
-            </div>
-
-            {/* Main Headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-[5rem] font-normal text-white tracking-tight font-tech leading-[1.05] mb-8 max-w-5xl mx-auto">
-                Infrastructure for <br className="hidden md:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-600">
-                    AI‑Powered Creative Production.
-                </span>
-            </h1>
-
-            {/* Subheadline */}
-            <p className="text-lg md:text-xl leading-relaxed text-zinc-400 font-light max-w-2xl mx-auto mb-8">
-                FlowScale turns experimental AI workflows into production infrastructure. Build workflows once, deploy them as reliable tools across your studio, and run everything inside your own pipeline.
-            </p>
-
-            {/* Supporting Lines */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-10 text-sm">
-                <span className="text-zinc-500">Technical teams build AI workflows.</span>
-                <span className="text-zinc-700 font-mono-custom hidden sm:inline">→</span>
-                <span className="text-zinc-500">FlowScale converts them into production applications.</span>
-                <span className="text-zinc-700 font-mono-custom hidden sm:inline">→</span>
-                <span className="text-emerald-500/70">Artists use them without touching nodes or code.</span>
+            <div className="max-w-4xl mx-auto text-center relative z-20">
+                <p className="font-mono-custom text-emerald-500 text-sm tracking-widest uppercase mb-6 flex items-center justify-center gap-3">
+                    <span className="w-8 h-[1px] bg-emerald-500/30"></span>
+                    Open source · Self-hosted · Free forever
+                    <span className="w-8 h-[1px] bg-emerald-500/30"></span>
+                </p>
+                
+                <h1 className="text-5xl md:text-7xl font-tech text-white leading-[1.1] tracking-tight mb-8 drop-shadow-2xl">
+                    Run AI tools on your own infrastructure — <br className="hidden md:block" />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-emerald-400 to-emerald-600 animate-pulse-slow">across all your GPUs.</span>
+                </h1>
+                
+                <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-3xl mx-auto leading-relaxed mb-12">
+                    FlowScale AIOS gives creative teams ready-to-use AI tools for generation and training — running in parallel across every GPU you own, with optional burst to your private cloud (via Modal.com).
+                </p>
             </div>
 
             {/* Primary CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-16">
                 <Link href="/download" className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-3.5 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]">
                     <Icon icon="solar:download-square-bold" width="18" />
-                    <span>Download FlowScale</span>
+                    <span>Download AIOS</span>
                 </Link>
-                <Link href="https://ammanjsharma.notion.site/Welcome-to-FlowScale-AIOS-Documentation-31ede69d87b180bfbba7c2fe66233fbb?source=copy_link" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-8 py-3.5 transition-all">
-                    <Icon icon="solar:document-text-bold" width="18" />
-                    <span>Documentation</span>
-                </Link>
+                <button onClick={togglePlay} className="flex items-center justify-center w-full sm:w-auto gap-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 text-sm font-medium rounded-md px-8 py-3.5 transition-all">
+                    <Icon icon="solar:play-circle-bold" width="18" />
+                    <span>Watch demo — 4 min</span>
+                </button>
             </div>
 
             {/* Visual / Product Demo Frame */}

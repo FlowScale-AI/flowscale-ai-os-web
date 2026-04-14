@@ -14,7 +14,7 @@ export default function PlatformFooter() {
                         <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10 text-[9px] font-mono-custom text-zinc-400 uppercase tracking-widest">Beta</span>
                     </div>
                     <p className="text-zinc-500 text-sm max-w-xs">
-                        The Operating System for Creative AI Production.
+                        Train, generate, and scale creative AI — on infrastructure you own.
                     </p>
                 </div>
 

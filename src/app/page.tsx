@@ -2,6 +2,8 @@ import Navbar from "@/components/MinimalNavbar";
 import PlatformHero from "@/components/platform/PlatformHero";
 import PlatformStack from "@/components/platform/PlatformStack";
 import PlatformProblem from "@/components/platform/PlatformProblem";
+import PlatformWhatYouGet from "@/components/platform/PlatformWhatYouGet";
+import PlatformBuiltInTools from "@/components/platform/PlatformBuiltInTools";
 import PlatformSolution from "@/components/platform/PlatformSolution";
 import PlatformDifferentiation from "@/components/platform/PlatformDifferentiation";
 import PlatformHowItWorks from "@/components/platform/PlatformHowItWorks";
@@ -9,6 +11,7 @@ import PlatformOpenSource from "@/components/platform/PlatformOpenSource";
 import PlatformPricing from "@/components/platform/PlatformPricing";
 import PlatformCTA from "@/components/platform/PlatformCTA";
 import PlatformFooter from "@/components/platform/PlatformFooter";
+import PlatformWhoItsFor from "@/components/platform/PlatformWhoItsFor";
 
 export default function Home() {
     return (
@@ -24,11 +27,14 @@ export default function Home() {
 
                 <div className="relative z-10 flex flex-col">
                     <PlatformHero />
-                    <PlatformStack />
                     <PlatformProblem />
-                    <PlatformSolution />
+                    <PlatformWhatYouGet />
+                    <PlatformBuiltInTools />
                     <PlatformDifferentiation />
+                    <PlatformSolution />
                     <PlatformHowItWorks />
+                    <PlatformWhoItsFor />
+                    <PlatformStack />
                     <PlatformOpenSource />
                     <PlatformPricing />
                     <PlatformCTA />

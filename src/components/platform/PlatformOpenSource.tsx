@@ -49,8 +49,9 @@ export default function PlatformOpenSource() {
                         <span className="font-mono-custom text-[10px] text-zinc-300 uppercase tracking-widest">Open Source Core</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-6">
-                        Open Infrastructure for Creative AI
+                    <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-6 mt-4">
+                        All features. <br />
+                        <span className="text-emerald-400">No limits. Self-hosted.</span>
                     </h2>
 
                     <p className="text-lg text-zinc-400 font-light leading-relaxed mb-8">
