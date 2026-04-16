@@ -114,15 +114,36 @@ export default function PlatformBuiltInTools() {
                             </div>
                             {/* Main Content Area */}
                             <div className="flex-1 flex flex-col h-full relative">
-                                {/* This is where the user will drop their screenshots */}
-                                <div className="w-full h-full bg-[#111113] border border-white/5 rounded-lg relative overflow-hidden flex flex-col items-center justify-center group-hover:border-emerald-500/30 transition-all duration-500">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                    <Icon key={`icon-${activeIdx}`} icon={activeTool.icon} className="text-zinc-700 w-12 h-12 mb-4 animate-pulse" />
-                                    <span key={`text-${activeIdx}`} className="text-zinc-500 text-sm font-tech text-center px-4 animate-fade-in">
-                                        {activeTool.mockContent}
-                                    </span>
+                                <div className="w-full h-full bg-[#0a0a0c] border border-white/5 rounded-lg relative overflow-hidden flex flex-col items-center justify-center group-hover:border-emerald-500/20 transition-all duration-500">
+                                    {/* Abstract background grid */}
+                                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:1rem_1rem]"></div>
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-emerald-500/10 blur-[50px] rounded-full"></div>
+                                    
+                                    {/* Tool Icon Floating */}
+                                    <div className="relative z-10 w-20 h-20 rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-500">
+                                        <Icon key={`icon-${activeIdx}`} icon={activeTool.icon} className="text-emerald-400 w-10 h-10 animate-pulse" />
+                                    </div>
+
+                                    {/* Simulated Task Progress */}
+                                    <div className="w-48 flex flex-col gap-2 relative z-10">
+                                        <div className="flex justify-between items-center text-[10px] font-mono-custom uppercase tracking-widest text-zinc-500">
+                                            <span>Processing</span>
+                                            <span className="text-emerald-500/80">Active</span>
+                                        </div>
+                                        <div className="w-full h-1 bg-zinc-800 rounded-full overflow-hidden">
+                                            <div className="h-full bg-emerald-500/80 rounded-full animate-[abstract-progress_2s_ease-in-out_infinite]" style={{ width: '40%' }}></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            <style jsx>{`
+                                @keyframes abstract-progress {
+                                    0% { width: 10%; margin-left: 0%; }
+                                    50% { width: 40%; margin-left: 30%; }
+                                    100% { width: 10%; margin-left: 90%; }
+                                }
+                            `}</style>
                         </div>
                     </div>
 

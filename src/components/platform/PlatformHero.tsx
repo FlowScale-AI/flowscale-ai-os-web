@@ -1,7 +1,7 @@
 "use client";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function PlatformHero() {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -9,6 +9,12 @@ export default function PlatformHero() {
     const handlePlay = () => {
         setIsPlaying(true);
     };
+
+    useEffect(() => {
+        const onPlayDemo = () => setIsPlaying(true);
+        window.addEventListener('playDemoVideo', onPlayDemo);
+        return () => window.removeEventListener('playDemoVideo', onPlayDemo);
+    }, []);
 
     return (
         <section className="relative z-20 flex flex-col items-center justify-center pt-32 pb-20 px-6 md:px-12 text-center min-h-[85vh]">

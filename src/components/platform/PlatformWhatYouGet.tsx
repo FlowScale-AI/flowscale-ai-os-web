@@ -30,7 +30,7 @@ export default function PlatformWhatYouGet() {
                         <div className="h-56 mb-8 relative flex items-center justify-center">
                             {/* Glow */}
                             <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                            
+
                             {/* App Window Representation */}
                             <div className="w-64 h-40 bg-[#111113] border border-white/10 rounded-xl shadow-2xl flex flex-col overflow-hidden relative z-10 transform group-hover:-translate-y-2 group-hover:scale-105 transition-all duration-500">
                                 {/* Header */}
@@ -63,7 +63,7 @@ export default function PlatformWhatYouGet() {
                                 <Icon icon="solar:videocamera-record-bold-duotone" width="24" />
                             </div>
                         </div>
-                        
+
                         <div className="flex items-center gap-4 mb-3 relative z-10">
                             <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500 font-mono-custom font-bold text-sm">1</div>
                             <h3 className="text-2xl text-white font-tech font-medium">Tools to actually use AI</h3>
@@ -79,7 +79,7 @@ export default function PlatformWhatYouGet() {
                         <div className="h-56 mb-8 relative flex flex-col items-center justify-center gap-3">
                             {/* Glow */}
                             <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                            
+
                             {/* GPU Bar 1 */}
                             <div className="w-full max-w-[260px] h-14 bg-[#111113] border border-emerald-500/30 rounded-xl shadow-lg flex items-center px-4 gap-4 relative z-10 transform group-hover:translate-x-2 transition-all duration-500">
                                 <Icon icon="solar:cpu-bolt-bold-duotone" width="24" className="text-emerald-500" />
@@ -107,13 +107,13 @@ export default function PlatformWhatYouGet() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             {/* Cloud Burst Bar */}
                             <div className="w-full max-w-[260px] h-14 bg-[#111113]/50 border border-white/10 border-dashed rounded-xl shadow-lg flex items-center px-4 gap-4 relative z-10 transform group-hover:translate-x-1 transition-all duration-500 delay-150">
                                 <Icon icon="solar:cloud-plus-bold-duotone" width="24" className="text-zinc-600 group-hover:text-emerald-500/50 transition-colors" />
                                 <div className="flex-1 flex flex-col gap-1.5">
                                     <div className="flex justify-between items-center text-[10px] font-mono-custom uppercase text-zinc-500 group-hover:text-emerald-500/70 transition-colors">
-                                        <span>Your Modal Cloud</span>
+                                        <span>Your Private Cloud</span>
                                         <span>Standby</span>
                                     </div>
                                     <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
@@ -122,7 +122,7 @@ export default function PlatformWhatYouGet() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="flex items-center gap-4 mb-3 relative z-10">
                             <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500 font-mono-custom font-bold text-sm">2</div>
                             <h3 className="text-2xl text-white font-tech font-medium">Compute pushed to max</h3>
