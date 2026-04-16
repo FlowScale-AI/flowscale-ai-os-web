@@ -51,7 +51,7 @@ export default function PlatformPricing() {
 
                         <Link href="/download" className="w-full flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium rounded-md px-6 py-4 transition-colors">
                             <Icon icon="solar:download-square-bold" width="18" />
-                            <span>Download AIOS</span>
+                            <span>Download AIOS (BETA)</span>
                         </Link>
                     </div>
 

@@ -27,11 +27,11 @@ export default function PlatformCTA() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                     <Link href="/download" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-4 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.15)]">
                         <Icon icon="solar:download-square-bold" width="20" />
-                        <span>Download AIOS</span>
+                        <span>Download AIOS (BETA)</span>
                     </Link>
 
-                    <a 
-                        href="#demo-section" 
+                    <a
+                        href="#demo-section"
                         onClick={(e) => {
                             e.preventDefault();
                             document.getElementById('demo-section')?.scrollIntoView({ behavior: 'smooth' });

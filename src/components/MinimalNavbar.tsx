@@ -11,7 +11,7 @@ export default function MinimalNavbar() {
             {/* Logo */}
             <div className="flex gap-3 items-center">
                 <img src="/flowscale-white-logo-full.png" alt="FlowScale" className="h-6 w-auto" />
-                <div className="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[9px] font-mono-custom text-emerald-500 uppercase tracking-widest mt-0.5 hidden sm:block cursor-default">Beta</div>
+                {/* <div className="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[9px] font-mono-custom text-emerald-500 uppercase tracking-widest mt-0.5 hidden sm:block cursor-default">Beta</div> */}
             </div>
 
             {/* Desktop Menu */}
