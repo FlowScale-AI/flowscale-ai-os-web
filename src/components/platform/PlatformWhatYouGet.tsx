@@ -66,10 +66,10 @@ export default function PlatformWhatYouGet() {
 
                         <div className="flex items-center gap-4 mb-3 relative z-10">
                             <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500 font-mono-custom font-bold text-sm">1</div>
-                            <h3 className="text-2xl text-white font-tech font-medium">Tools to actually use AI</h3>
+                            <h3 className="text-2xl text-white font-tech font-medium">Build & Run your own AI Tools</h3>
                         </div>
                         <p className="text-zinc-500 text-sm font-light leading-relaxed pl-12 relative z-10">
-                            Production-ready interfaces for generation, training, and editing. Build and run workflows without touching code.
+                            Use pre-built production-ready interfaces for generation, training, and editing. OR, build and run ComfyUI workflows as sharable AI tools.
                         </p>
                     </div>
 

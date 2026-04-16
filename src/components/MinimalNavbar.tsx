@@ -20,6 +20,10 @@ export default function MinimalNavbar() {
                     Home
                 </Link>
 
+                <Link href="/aios" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                    AIOS
+                </Link>
+
                 <Link href="/blog" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
                     Blog
                 </Link>

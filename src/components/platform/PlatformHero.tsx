@@ -31,7 +31,7 @@ export default function PlatformHero() {
                 </h1>
 
                 <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-3xl mx-auto leading-relaxed mb-12">
-                    FlowScale AIOS gives creative teams ready-to-use AI tools for generation and training — running in parallel across every GPU you own, with optional burst to your trusted private cloud.
+                    Use pre-built, or ComfyUI-based, AI tools for generation and training — running in parallel across every GPU you own, with optional burst to your trusted private cloud.
                 </p>
             </div>
 
