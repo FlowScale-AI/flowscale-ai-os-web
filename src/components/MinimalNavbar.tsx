@@ -11,7 +11,7 @@ export default function MinimalNavbar() {
             {/* Logo */}
             <div className="flex gap-3 items-center">
                 <img src="/flowscale-white-logo-full.png" alt="FlowScale" className="h-6 w-auto" />
-                <div className="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[9px] font-mono-custom text-emerald-500 uppercase tracking-widest mt-0.5 hidden sm:block cursor-default">Beta</div>
+                {/* <div className="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[9px] font-mono-custom text-emerald-500 uppercase tracking-widest mt-0.5 hidden sm:block cursor-default">Beta</div> */}
             </div>
 
             {/* Desktop Menu */}
@@ -20,17 +20,13 @@ export default function MinimalNavbar() {
                     Home
                 </Link>
 
+                <Link href="/aios" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                    AIOS
+                </Link>
+
                 <Link href="/blog" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
                     Blog
                 </Link>
-
-                <Link href="/about" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
-                    About
-                </Link>
-
-                <a href="https://ammanjsharma.notion.site/Welcome-to-FlowScale-AIOS-Documentation-31ede69d87b180bfbba7c2fe66233fbb?source=copy_link" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
-                    Docs
-                </a>
             </div>
 
             {/* CTA */}
@@ -82,14 +78,11 @@ export default function MinimalNavbar() {
                     </div>
                 ) : (
                     <div className="flex items-center gap-4">
-                        <Link href="/login" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors hidden sm:block">
-                            Sign In
-                        </Link>
                         <Link
                             href="/download"
                             className="group hover:bg-emerald-400 hover:text-black transition-all flex text-xs font-medium text-emerald-400 bg-emerald-950/30 border border-emerald-500/30 rounded-md px-4 py-2 items-center cursor-pointer gap-2"
                         >
-                            <span>Try AIOS</span>
+                            <span>Download AIOS</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-0.5 transition-transform">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />

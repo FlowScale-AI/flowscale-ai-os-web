@@ -14,34 +14,34 @@ export default function PlatformCTA() {
             <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center">
 
                 <h2 className="text-4xl md:text-6xl text-white font-tech font-light tracking-tight mb-6">
-                    Own Your Creative <br />
+                    Run AI on your own <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-600">
-                        AI Infrastructure
+                        infrastructure.
                     </span>
                 </h2>
 
-                <p className="text-xl text-zinc-400 font-light max-w-xl mx-auto mb-4">
-                    Stop renting AI tools.
-                </p>
-                <p className="text-xl text-zinc-500 font-light max-w-xl mx-auto mb-12">
-                    Run AI directly inside your studio pipeline.
+                <p className="text-xl text-zinc-400 font-light max-w-xl mx-auto mb-12">
+                    Turn your workstation into a parallel AI engine.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                     <Link href="/download" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-100 hover:bg-white text-black text-sm font-semibold rounded-md px-8 py-4 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.15)]">
                         <Icon icon="solar:download-square-bold" width="20" />
-                        <span>Download FlowScale</span>
+                        <span>Download AIOS (BETA)</span>
                     </Link>
 
-                    <a href="https://cal.com/aman-flowscale/enterprise" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-emerald-950/30 border border-emerald-500/30 hover:bg-emerald-900/40 hover:border-emerald-500/50 text-emerald-400 text-sm font-medium rounded-md px-8 py-4 transition-all">
-                        <Icon icon="solar:calendar-date-bold" width="20" />
-                        <span>Book Enterprise Demo</span>
+                    <a
+                        href="#demo-section"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('demo-section')?.scrollIntoView({ behavior: 'smooth' });
+                            setTimeout(() => window.dispatchEvent(new Event('playDemoVideo')), 500);
+                        }}
+                        className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md px-6 py-4 transition-colors"
+                    >
+                        <Icon icon="solar:play-circle-bold" width="20" />
+                        <span>Watch full demo</span>
                     </a>
-
-                    <Link href="https://github.com/FlowScale-AI/flowscale-aios" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md px-6 py-4 transition-colors">
-                        <Icon icon="simple-icons:github" width="20" />
-                        <span>Star on GitHub</span>
-                    </Link>
                 </div>
 
             </div>

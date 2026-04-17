@@ -59,17 +59,19 @@ export default function PlatformStack() {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <p className="font-mono-custom text-[11px] text-emerald-500 uppercase tracking-widest mb-4">
-                        Architecture
+                        Why FlowScale
                     </p>
                     <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-6">
-                        A New Layer in the <br />
+                        AIOS is the missing layer between <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-600">
-                            Creative AI Stack
+                            AI tools and compute.
                         </span>
                     </h2>
-                    <p className="text-lg text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed">
-                        Generative AI workflows are powerful, but difficult to deploy, manage, and use in real production environments. FlowScale introduces the missing infrastructure layer.
-                    </p>
+                    <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mt-4 mb-8">
+                        <div className="bg-[#0c0c0e] border border-white/5 px-4 py-2 rounded-lg text-emerald-400 font-tech text-sm md:text-base">Tools become usable</div>
+                        <div className="bg-[#0c0c0e] border border-white/5 px-4 py-2 rounded-lg text-emerald-400 font-tech text-sm md:text-base">Compute becomes scalable</div>
+                        <div className="bg-[#0c0c0e] border border-white/5 px-4 py-2 rounded-lg text-emerald-400 font-tech text-sm md:text-base">Infrastructure stays in your control</div>
+                    </div>
                 </div>
 
                 {/* Stack Diagram */}

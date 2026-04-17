@@ -4,19 +4,19 @@ import { Icon } from "@iconify/react";
 export default function PlatformProblem() {
     const problems = [
         {
-            icon: "solar:layers-minimalistic-bold-duotone",
-            title: "Fragmented Tooling",
-            description: "Studios rely on dozens of disconnected AI tools, each with different interfaces, subscriptions, and limitations."
+            icon: "solar:users-group-rounded-bold-duotone",
+            title: "Tools aren't usable by teams",
+            description: "Workflows live with one person. Others can't use them."
         },
         {
-            icon: "solar:shield-warning-bold-duotone",
-            title: "Creative IP at Risk",
-            description: "Most AI tools operate on cloud infrastructure, forcing studios to send sensitive assets and client work outside their production environment."
+            icon: "solar:server-square-bold-duotone",
+            title: "Compute is underutilized",
+            description: "Multiple GPUs exist, but only one is used at a time."
         },
         {
-            icon: "solar:programming-bold-duotone",
-            title: "Workflows Built for Engineers",
-            description: "Local AI workflows exist, but they are complex node graphs designed for technical users rather than artists."
+            icon: "solar:graph-up-bold-duotone",
+            title: "Scaling is painful",
+            description: "Cloud requires setup, rewrites, and ongoing management."
         }
     ];
 
@@ -29,14 +29,11 @@ export default function PlatformProblem() {
                     <p className="font-mono-custom text-[11px] text-red-400/70 uppercase tracking-widest mb-4">
                         The Problem
                     </p>
-                    <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-6">
-                        AI Workflows Are Powerful — <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">
-                            But Not Production Ready
-                        </span>
+                    <h2 className="text-3xl md:text-5xl text-white font-tech font-light tracking-tight mb-6 mt-4">
+                        AI works in demos. <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">Breaks in production.</span>
                     </h2>
                     <p className="text-zinc-500 text-lg font-light leading-relaxed">
-                        Creative teams experimenting with generative AI encounter three major barriers.
+                        Teams experimenting with AI quickly hit limits:
                     </p>
                 </div>
 
@@ -58,6 +55,12 @@ export default function PlatformProblem() {
                             </p>
                         </div>
                     ))}
+                </div>
+
+                <div className="mt-16 text-center max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-zinc-300 font-light font-tech tracking-tight">
+                        Result: promising experiments don't translate into <span className="text-red-400">real production output.</span>
+                    </p>
                 </div>
 
             </div>
