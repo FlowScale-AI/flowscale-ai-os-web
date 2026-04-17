@@ -27,14 +27,6 @@ export default function MinimalNavbar() {
                 <Link href="/blog" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
                     Blog
                 </Link>
-
-                <a href="https://ammanjsharma.notion.site/Welcome-to-FlowScale-AIOS-Documentation-31ede69d87b180bfbba7c2fe66233fbb?source=copy_link" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
-                    Docs
-                </a>
-
-                <a href="https://github.com/FlowScale-AI/flowscale-aios" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
-                    GitHub
-                </a>
             </div>
 
             {/* CTA */}
