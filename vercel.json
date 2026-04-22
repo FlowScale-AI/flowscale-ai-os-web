@@ -27,7 +27,7 @@
     },
     {
       "source": "/download_windows.exe",
-      "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/FlowScale+AI+OS+Setup+0.3.11.exe",
+      "destination": "https://flowscale-aios.s3.us-east-1.amazonaws.com/FlowScale+AI+OS+Setup+0.3.13.exe",
       "permanent": false
     },
     {
