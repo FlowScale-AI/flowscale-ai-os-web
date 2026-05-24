@@ -29,6 +29,12 @@ export default function Footer() {
           </Link>
         </div>
       </div>
+
+      <div className="mt-8 pt-6 border-t border-white/5 text-center">
+        <p className="text-[10px] text-zinc-600 font-mono-custom uppercase tracking-widest">
+          &copy; {new Date().getFullYear()} GETINSYNK TECH PRIVATE LIMITED. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 }

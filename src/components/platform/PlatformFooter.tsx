@@ -59,10 +59,17 @@ export default function PlatformFooter() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="max-w-7xl mx-auto border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p className="text-zinc-600 text-xs font-mono-custom uppercase tracking-widest">
-                    &copy; {new Date().getFullYear()} FlowScale AI. All rights reserved.
-                </p>
+            <div className="max-w-7xl mx-auto border-t border-white/5 pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div className="flex flex-col gap-2">
+                    <p className="text-zinc-600 text-xs font-mono-custom uppercase tracking-widest">
+                        &copy; {new Date().getFullYear()} GETINSYNK TECH PRIVATE LIMITED. All rights reserved.
+                    </p>
+                    <p className="text-zinc-700 text-[11px] leading-relaxed">
+                        Registered office: SOLUS Building, Office No. 1913 Thane 400607, Maharashtra
+                        <span className="mx-2 text-zinc-800">·</span>
+                        CIN: U72900MH2022PTC37695
+                    </p>
+                </div>
                 <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
                     <span className="text-emerald-500 text-xs font-mono-custom uppercase tracking-widest">Systems Normal</span>

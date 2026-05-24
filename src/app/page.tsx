@@ -79,15 +79,21 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Bottom bar: Clients */}
-          <div className="border-t border-white/5 mt-10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-            <p className="font-mono-custom text-[10px] text-zinc-600 uppercase tracking-widest">
-              Trusted By Teams At
+          {/* Bottom bar: Legal + Clients */}
+          <div className="border-t border-white/5 mt-10 pt-6 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-6">
+            <p className="font-mono-custom text-[10px] text-zinc-700">
+              &copy; {new Date().getFullYear()} GETINSYNK TECH PRIVATE LIMITED
             </p>
-            <div className="flex items-center gap-10 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-              <img src="/clients/hogarth-white.png" alt="Hogarth" className="h-9 w-auto object-contain" />
-              <img src="/clients/invnt-white.png" alt="INVNT" className="h-9 w-auto object-contain" />
-              <img src="/clients/superside-white.png" alt="Superside" className="h-9 w-auto object-contain" />
+
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+              <p className="font-mono-custom text-[10px] text-zinc-600 uppercase tracking-widest">
+                Trusted By Teams At
+              </p>
+              <div className="flex items-center gap-10 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <img src="/clients/hogarth-white.png" alt="Hogarth" className="h-9 w-auto object-contain" />
+                <img src="/clients/invnt-white.png" alt="INVNT" className="h-9 w-auto object-contain" />
+                <img src="/clients/superside-white.png" alt="Superside" className="h-9 w-auto object-contain" />
+              </div>
             </div>
           </div>
         </div>
