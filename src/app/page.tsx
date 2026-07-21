@@ -366,15 +366,15 @@ export default function Home() {
             {[
               {
                 title: "A live brand activation",
-                body: "430 guests, each handed personalised cinematic media generated in under 60 seconds, every piece checked before release.",
+                body: "430 guests, each handed personalised cinematic media in under 60 seconds. Every piece made and checked live, by us.",
               },
               {
                 title: "A global creative network",
-                body: "Full creative production run inside their own walls, with zero outside AI dependencies.",
+                body: "On-brand campaign creative made at a volume their own team couldn't staff for, delivered on their deadlines.",
               },
               {
-                title: "A Fortune 500 creative platform",
-                body: "Our AI production infrastructure, deployed on their own hardware.",
+                title: "A Fortune 500 enterprise",
+                body: "A custom AI system, built to their brief and deployed inside their own systems, running in real time.",
               },
             ].map((item) => (
               <div
