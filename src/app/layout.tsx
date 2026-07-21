@@ -20,8 +20,9 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FlowScale AI OS",
-  description: "The Operating System for Creative AI Production.",
+  title: "FlowScale AI — Creative at scale, and the AI systems behind your next big idea.",
+  description:
+    "A creative and technology studio. We produce on-brand creative at volume, and build custom AI systems that run at scale, in real time, on your own infrastructure.",
 };
 
 export default function RootLayout({
