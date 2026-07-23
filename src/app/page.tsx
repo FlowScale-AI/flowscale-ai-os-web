@@ -162,10 +162,10 @@ export default function Home() {
 
                 {/* Headline */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] font-normal text-white tracking-tight font-tech leading-[1.05] mb-8">
-                  Creative at scale, and
+                  Creative at scale,
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-600">
-                    AI systems that actually work.
+                    without losing the craft.
                   </span>
                 </h1>
 
@@ -600,7 +600,7 @@ export default function Home() {
                 className="h-6 w-auto mb-5"
               />
               <p className="text-sm text-zinc-400 font-light leading-relaxed">
-                Creative at scale, and the AI systems behind your next big idea.
+                Creative at scale, without losing the craft.
               </p>
             </div>
 

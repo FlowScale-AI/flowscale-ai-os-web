@@ -20,7 +20,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FlowScale AI — Creative at scale, and the AI systems behind your next big idea.",
+  title: "FlowScale AI — Creative at scale, without losing the craft.",
   description:
     "A creative and technology studio. We produce on-brand creative at volume, and build custom AI systems that run at scale, in real time, on your own infrastructure.",
 };
